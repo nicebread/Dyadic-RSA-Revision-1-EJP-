@@ -1,0 +1,2089 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{Aiken_West_1991}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a386a572bb548ede0bc78327b5c9f642}{%
+           family={Aiken},
+           familyi={A\bibinitperiod},
+           given={L.\bibnamedelimi S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=95a799094b6c5c167c9d2e84f508e096}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications, Inc}%
+      }
+      \strng{namehash}{e624d56f8caf123119eaf1e4990eb157}
+      \strng{fullhash}{e624d56f8caf123119eaf1e4990eb157}
+      \strng{authornamehash}{e624d56f8caf123119eaf1e4990eb157}
+      \strng{authorfullhash}{e624d56f8caf123119eaf1e4990eb157}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-8039-3605-2}
+      \field{title}{Multiple regression: {T}esting and interpreting interactions}
+      \field{year}{1991}
+    \endentry
+    \entry{Barranti__2017}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=30ba2769262b6ee77af218440d60bd25}{%
+           family={Barranti},
+           familyi={B\bibinitperiod},
+           given={Maxwell},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=6c2b16fac2d3876a1c8c15137e26f8bd}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={Erika\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=9bfb9dd5959c3740eabca94ae2da8bd6}{%
+           family={Côté},
+           familyi={C\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c064d1212a7d8442b8acff6bb0be9d0b}
+      \strng{fullhash}{d47f0b775a7872295ff9fa85a29b1df6}
+      \strng{authornamehash}{c064d1212a7d8442b8acff6bb0be9d0b}
+      \strng{authorfullhash}{d47f0b775a7872295ff9fa85a29b1df6}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1948-5506}
+      \field{journaltitle}{Social Psychological and Personality Science}
+      \field{month}{5}
+      \field{number}{4}
+      \field{title}{How to Test Questions About Similarity in Personality and Social Psychology Research: {D}escription and Empirical Demonstration of Response Surface Analysis}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{465\bibrangedash 475}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1177/1948550617698204
+      \endverb
+    \endentry
+    \entry{Baumeister_1989}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=274b62d8623b4aa55c5ed997338150b5}{%
+           family={Baumeister},
+           familyi={B\bibinitperiod},
+           given={Roy\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{274b62d8623b4aa55c5ed997338150b5}
+      \strng{fullhash}{274b62d8623b4aa55c5ed997338150b5}
+      \strng{authornamehash}{274b62d8623b4aa55c5ed997338150b5}
+      \strng{authorfullhash}{274b62d8623b4aa55c5ed997338150b5}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Social and Clinical Psychology}
+      \field{number}{2}
+      \field{title}{The optimal margin of illusion}
+      \field{volume}{8}
+      \field{year}{1989}
+      \field{pages}{176\bibrangedash 189}
+      \range{pages}{14}
+    \endentry
+    \entry{benjamini_controlling_1995}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
+           family={Benjamini},
+           familyi={B\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod}}}%
+        {{uniquename=0,hash=486dfb83d695169656e5706b50266208}{%
+           family={Hochberg},
+           familyi={H\bibinitperiod},
+           given={Yosef},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \strng{fullhash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \strng{authornamehash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \strng{authorfullhash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The common approach to the multiplicity problem calls for controlling the familywise error rate (FWER). This approach, though, has faults, and we point out a few. A different approach to problems of multiple significance testing is presented. It calls for controlling the expected proportion of falsely rejected hypotheses-the false discovery rate. This error rate is equivalent to the FWER when all hypotheses are true but is smaller otherwise. Therefore, in problems where the control of the false discovery rate rather than that of the FWER is desired, there is potential for a gain in power. A simple sequential Bonferroni-type procedure is proved to control the false discovery rate for independent test statistics, and a simulation study shows that the gain in power is substantial. The use of the new procedure and the appropriateness of the criterion are illustrated with examples.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0035-9246}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series B (Methodological)}
+      \field{shorttitle}{Controlling the {{False Discovery Rate}}}
+      \field{title}{Controlling the {{False Discovery Rate}}: {{A}} Practical and Powerful Approach to Multiple Testing}
+      \field{volume}{57}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{289\bibrangedash 300}
+      \range{pages}{12}
+      \verb{eprint}
+      \verb 2346101
+      \endverb
+    \endentry
+    \entry{BlantonEtAl2006}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=ef5b20a12c755805197214fd6bdaecc3}{%
+           family={Blanton},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{uniquename=0,hash=172570ae660cc3d3b0290032bfe7904e}{%
+           family={Jaccard},
+           familyi={J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=9502a8b3098edcaaafe523a86ca8d22e}{%
+           family={Gonzales},
+           familyi={G\bibinitperiod},
+           given={P.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=ebee5b930a29baf52eb06c8b47d4f5fb}{%
+           family={Christie},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{767a482037cdeddc7967876a6a1f59d6}
+      \strng{fullhash}{9af58ac2f755aeea64950f9d411732ee}
+      \strng{authornamehash}{767a482037cdeddc7967876a6a1f59d6}
+      \strng{authorfullhash}{9af58ac2f755aeea64950f9d411732ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Social Psychology}
+      \field{title}{Decoding the implicit association test: {I}mplications for criterion prediction.}
+      \field{volume}{42}
+      \field{year}{2006}
+      \field{pages}{192\bibrangedash 212}
+      \range{pages}{21}
+    \endentry
+    \entry{Bleidorn_2016}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,hash=0b25dadea1b38d3781ed70c99ccaa940}{%
+           family={Bleidorn},
+           familyi={B\bibinitperiod},
+           given={Wiebke},
+           giveni={W\bibinitperiod}}}%
+        {{uniquename=0,hash=aac1d10a45e925b01a900d3eebbe764c}{%
+           family={Schönbrodt},
+           familyi={S\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{uniquename=0,hash=50878ec5e426325dc1b4916968dd0727}{%
+           family={Gebauer},
+           familyi={G\bibinitperiod},
+           given={Jochen\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{uniquename=0,hash=df6f752fa9c9ff788cd0287d990b0b2f}{%
+           family={Rentfrow},
+           familyi={R\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=35a9fcd37e8ff60cb0aa2877044a4daa}{%
+           family={Potter},
+           familyi={P\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=c227e32040a630ebe1ca73e0b38e17fc}{%
+           family={Gosling},
+           familyi={G\bibinitperiod},
+           given={Samuel\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{409000e7e5ccd7771cdbb5b95ed06e82}
+      \strng{fullhash}{06829b57767778b0e5efc3275daba5a7}
+      \strng{authornamehash}{409000e7e5ccd7771cdbb5b95ed06e82}
+      \strng{authorfullhash}{06829b57767778b0e5efc3275daba5a7}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0956-7976}
+      \field{journaltitle}{Psychological Science}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{To Live Among Like-Minded Others: {E}xploring the Links Between Person-City Personality Fit and Self-Esteem}
+      \field{volume}{27}
+      \field{year}{2016}
+      \field{pages}{419\bibrangedash 427}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1177/0956797615627133
+      \endverb
+    \endentry
+    \entry{boele_persongroup_2017}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=6f03c90b25bd9b6f42d5c95af0acc24d}{%
+           family={Boele},
+           familyi={B\bibinitperiod},
+           given={Savannah},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=15db104bbfcd02997197b5957f9c5ce2}{%
+           family={Sijtsema},
+           familyi={S\bibinitperiod},
+           given={Jelle\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=f1145966d52fae90dc1675050d234c89}{%
+           family={Klimstra},
+           familyi={K\bibinitperiod},
+           given={Theo\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=946b2582bd3030dc0a0978754fe8d022}{%
+           family={Denissen},
+           familyi={D\bibinitperiod},
+           given={Jaap\bibnamedelima {J.A.}},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=bdc146d938129d0726e07e9821e54d22}{%
+           family={Meeus},
+           familyi={M\bibinitperiod},
+           given={Wim\bibnamedelima {H.J.}},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a89751b1a7861c85ceec5c6409566e42}
+      \strng{fullhash}{397b77230ef59f067f443bfca68519dd}
+      \strng{authornamehash}{a89751b1a7861c85ceec5c6409566e42}
+      \strng{authorfullhash}{397b77230ef59f067f443bfca68519dd}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1099-0984}
+      \field{journaltitle}{European Journal of Personality}
+      \field{number}{3}
+      \field{title}{{Person–Group} Dissimilarity in Personality and Peer Victimization}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{pages}{220\bibrangedash 233}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/per.2105
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1002/per.2105/abstract
+      \endverb
+      \keyw{Big Five,classroom norms,Dark Triad,peer victimization,person–group dissimilarity}
+    \endentry
+    \entry{bollen_regression_1985}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=8d8ccfbf5ec53b5e9fc691ae53d76e6e}{%
+           family={Bollen},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=dca33d342a4b75d426bfacfdaa283ec3}{%
+           family={Jackman},
+           familyi={J\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{10e57d4260455c42b0527995327eb630}
+      \strng{fullhash}{10e57d4260455c42b0527995327eb630}
+      \strng{authornamehash}{10e57d4260455c42b0527995327eb630}
+      \strng{authorfullhash}{10e57d4260455c42b0527995327eb630}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0049-1241, 1552-8294}
+      \field{journaltitle}{Sociological Methods \& Research}
+      \field{number}{4}
+      \field{title}{Regression Diagnostics: {{An}} Expository Treatment of Outliers and Influential Cases}
+      \field{urlday}{14}
+      \field{urlmonth}{9}
+      \field{urlyear}{2012}
+      \field{volume}{13}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{510\bibrangedash 542}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1177/0049124185013004004
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Volumes/HDD/Rechner/Zotero/storage/DNXFHR23/Bollen und Jackman - 1985 - Regression Diagnostics An Expository Treatment of .pdf:application/pdf;Snapshot:/Volumes/HDD/Rechner/Zotero/storage/2VRE68JB/510.full.html:text/html
+      \endverb
+    \endentry
+    \entry{bonferroni_il_1935}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9bb01e3e13fbda7e2d1a4518c34e42a3}{%
+           family={Bonferroni},
+           familyi={B\bibinitperiod},
+           given={Carlo\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Tipografia del Senato}%
+      }
+      \strng{namehash}{9bb01e3e13fbda7e2d1a4518c34e42a3}
+      \strng{fullhash}{9bb01e3e13fbda7e2d1a4518c34e42a3}
+      \strng{authornamehash}{9bb01e3e13fbda7e2d1a4518c34e42a3}
+      \strng{authorfullhash}{9bb01e3e13fbda7e2d1a4518c34e42a3}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Il Calcolo Delle Assicurazioni Su Gruppi Di Teste}
+      \field{year}{1935}
+      \field{dateera}{ce}
+    \endentry
+    \entry{burnham_model_2002}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=1d85f38a05436e046a1183e15f2c399b}{%
+           family={Burnham},
+           familyi={B\bibinitperiod},
+           given={Kenneth\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=ca4487edfa6a935f05cbd0aadc69e867}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{fullhash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{authornamehash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{authorfullhash}{656669fad281cdc2a3c0e197897c9086}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We wrote this book to introduce graduate students and research workers in various scienti?c disciplines to the use of information-theoretic approaches in the analysis of empirical data. These methods allow the data-based selection of a “best” model and a ranking and weighting of the remaining models in a pre-de?ned set. Traditional statistical inference can then be based on this selected best model. However, we now emphasize that information-theoretic approaches allow formal inference to be based on more than one model (m- timodel inference). Such procedures lead to more robust inferences in many cases, and we advocate these approaches throughout the book. The second edition was prepared with three goals in mind. First, we have tried to improve the presentation of the material. Boxes now highlight ess- tial expressions and points. Some reorganization has been done to improve the ?ow of concepts, and a new chapter has been added. Chapters 2 and 4 have been streamlined in view of the detailed theory provided in Chapter 7. S- ond, concepts related to making formal inferences from more than one model (multimodel inference) have been emphasized throughout the book, but p- ticularly in Chapters 4, 5, and 6. Third, new technical material has been added to Chapters 5 and 6. Well over 100 new references to the technical literature are given. These changes result primarily from our experiences while giving several seminars, workshops, and graduate courses on material in the ?rst e- tion.}
+      \field{isbn}{978-0-387-95364-9}
+      \field{month}{7}
+      \field{shorttitle}{Model {{Selection}} and {{Multimodel Inference}}}
+      \field{title}{Model Selection and Multimodel Inference: {{A}} Practical Information-Theoretic Approach}
+      \field{year}{2002}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Burnham_Anderson_2004}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=1d85f38a05436e046a1183e15f2c399b}{%
+           family={Burnham},
+           familyi={B\bibinitperiod},
+           given={Kenneth\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=ca4487edfa6a935f05cbd0aadc69e867}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{fullhash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{authornamehash}{656669fad281cdc2a3c0e197897c9086}
+      \strng{authorfullhash}{656669fad281cdc2a3c0e197897c9086}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sociological Methods \& Research}
+      \field{number}{2}
+      \field{title}{Multimodel inference: {U}nderstanding {AIC} and {BIC} in model selection}
+      \field{volume}{33}
+      \field{year}{2004}
+      \field{pages}{261\bibrangedash 304}
+      \range{pages}{44}
+    \endentry
+    \entry{burnham_aic_2011}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=1d85f38a05436e046a1183e15f2c399b}{%
+           family={Burnham},
+           familyi={B\bibinitperiod},
+           given={Kenneth\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=ca4487edfa6a935f05cbd0aadc69e867}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=5443f082290ac3ff075be08750190fc5}{%
+           family={Huyvaert},
+           familyi={H\bibinitperiod},
+           given={Kathryn\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4d498ff6e67a2925aeca4be64a46e5ba}
+      \strng{fullhash}{37ec7ef843faae6288998b5725600efd}
+      \strng{authornamehash}{4d498ff6e67a2925aeca4be64a46e5ba}
+      \strng{authorfullhash}{37ec7ef843faae6288998b5725600efd}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0340-5443, 1432-0762}
+      \field{journaltitle}{Behavioral Ecology and Sociobiology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{{{AIC}} Model Selection and Multimodel Inference in Behavioral Ecology}
+      \field{title}{{{AIC}} Model Selection and Multimodel Inference in Behavioral Ecology: {S}ome Background, Observations, and Comparisons}
+      \field{volume}{65}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{23\bibrangedash 35}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00265-010-1029-6
+      \endverb
+    \endentry
+    \entry{collins_comparison_2001}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=c703ae8e533a57f006371afece7c8a8c}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=4de5ff14376dc2d177f24fa331be1fba}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{uniquename=0,hash=d33b976a08bd1765f4bb04062c5b59d4}{%
+           family={Kam},
+           familyi={K\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc4e2e9f6c8f537686cb5317f1abff18}
+      \strng{fullhash}{698a5f914c1415da880f3b6b991ad507}
+      \strng{authornamehash}{cc4e2e9f6c8f537686cb5317f1abff18}
+      \strng{authorfullhash}{698a5f914c1415da880f3b6b991ad507}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Two classes of modern missing data procedures, maximum likelihood (ML) and multiple imputation (MI), tend to yield similar results when implemented in comparable ways. In either approach, it is possible to include auxiliary variables solely for the purpose of improving the missing data procedure. A simulation was presented to assess the potential costs and benefits of a restrictive strategy, which makes minimal use of auxiliary variables, versus an inclusive strategy, which makes liberal use of such variables. The simulation showed that the inclusive strategy is to be greatly preferred. With an inclusive strategy not only is there a reduced chance of inadvertently omitting an important cause of missingness, there is also the possibility of noticeable gains in terms of increased efficiency and reduced bias, with only minor costs. As implemented in currently available software, the ML approach tends to encourage the use of a restrictive strategy, whereas the MI approach makes it relatively simple to use an inclusive strategy.}
+      \field{eprinttype}{pmid}
+      \field{issn}{1082-989X}
+      \field{journaltitle}{Psychological Methods}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{Psychol Methods}
+      \field{title}{A Comparison of Inclusive and Restrictive Strategies in Modern Missing Data Procedures}
+      \field{volume}{6}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{330\bibrangedash 351}
+      \range{pages}{22}
+      \verb{eprint}
+      \verb 11778676
+      \endverb
+    \endentry
+    \entry{Cronbach1955}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cada70169a1b190e18f3def2390c16c3}{%
+           family={Cronbach},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cada70169a1b190e18f3def2390c16c3}
+      \strng{fullhash}{cada70169a1b190e18f3def2390c16c3}
+      \strng{authornamehash}{cada70169a1b190e18f3def2390c16c3}
+      \strng{authorfullhash}{cada70169a1b190e18f3def2390c16c3}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{title}{Processes affecting scores on "understanding of others" and "assumed similarity"}
+      \field{volume}{52}
+      \field{year}{1955}
+      \field{pages}{177\bibrangedash 193}
+      \range{pages}{17}
+    \endentry
+    \entry{CronbachGleser1953}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=cada70169a1b190e18f3def2390c16c3}{%
+           family={Cronbach},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=046cab3d4e5016d8904807de6e21dcfe}{%
+           family={Gleser},
+           familyi={G\bibinitperiod},
+           given={G.\bibnamedelimi C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e491b6edffef98ccb098bc374db7280}
+      \strng{fullhash}{8e491b6edffef98ccb098bc374db7280}
+      \strng{authornamehash}{8e491b6edffef98ccb098bc374db7280}
+      \strng{authorfullhash}{8e491b6edffef98ccb098bc374db7280}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{title}{Assessing similarity between profiles}
+      \field{volume}{50}
+      \field{year}{1953}
+      \field{pages}{456\bibrangedash 473}
+      \range{pages}{18}
+    \endentry
+    \entry{DyrenforthEtAl2010}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=4ee3e92b6e8dafa5062d125b2a3e0db1}{%
+           family={Dyrenforth},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=a9b16054eb35475d366b13c5b26903f7}{%
+           family={Kashy},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=c975385cc492b9b299e80dc18dd401bd}{%
+           family={Donnellan},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{uniquename=0,hash=b25ec4a3773081cd246a735cbda651d5}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{024343c1348ae9038777cf623f524aef}
+      \strng{fullhash}{f1c42c7c66a06e85df2ce8dbb87dfa07}
+      \strng{authornamehash}{024343c1348ae9038777cf623f524aef}
+      \strng{authorfullhash}{f1c42c7c66a06e85df2ce8dbb87dfa07}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Personality and Social Psychology}
+      \field{title}{Predicting relationship and life satisfaction from personality in nationally representative samples from three countries: {T}he relative importance of actor, partner, and similarity effects.}
+      \field{volume}{99}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{690\bibrangedash 702}
+      \range{pages}{13}
+    \endentry
+    \entry{Dziak_2012}{unpublished}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=a5e610f11aa932a48f3c457e1962d636}{%
+           family={Dziak},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=c727ebb407ac4395d8a2ea63e750cec9}{%
+           family={Coffman},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{uniquename=0,hash=b1fb9ef33231e7afc4bd1a5a9f477083}{%
+           family={Lanza},
+           familyi={L\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{uniquename=0,hash=5ad47047e6a97e00f2f70bc015c33a95}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b17653d37a53f82ad7cf138c49fe87e}
+      \strng{fullhash}{4e39f6986aaa0b1c5c87a87b8e7d1623}
+      \strng{authornamehash}{6b17653d37a53f82ad7cf138c49fe87e}
+      \strng{authorfullhash}{4e39f6986aaa0b1c5c87a87b8e7d1623}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sensitivity and specificity of information criteria}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://methodology.psu.edu/media/techreports/12-119.pdf
+      \endverb
+    \endentry
+    \entry{Edwards2001}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2e86adacfb6c1616ff30247a400a8b7e}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{fullhash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{authornamehash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{authorfullhash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Organizational Research Methods}
+      \field{title}{Ten difference score myths}
+      \field{volume}{4}
+      \field{year}{2001}
+      \field{pages}{265\bibrangedash 287}
+      \range{pages}{23}
+    \endentry
+    \entry{edwards_alternatives_2002}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2e86adacfb6c1616ff30247a400a8b7e}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=e43b29b2a49f5d3833e99dbbecdbd3ff}{%
+           family={Drasgow},
+           familyi={D\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=963fd9d7097877d76690ead29097b798}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={N.\bibnamedelimi W.},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {Jossey-Bass}%
+      }
+      \strng{namehash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{fullhash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{authornamehash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{authorfullhash}{2e86adacfb6c1616ff30247a400a8b7e}
+      \strng{editornamehash}{d0d8dc148708538b83b120d5450bfe07}
+      \strng{editorfullhash}{d0d8dc148708538b83b120d5450bfe07}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Measurement and Data Analysis}
+      \field{title}{Alternatives to Difference Scores: {{Polynomial}} Regression Analysis and Response Surface Methodology}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{350\bibrangedash 400}
+      \range{pages}{51}
+    \endentry
+    \entry{EdwardsParry1993}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2e86adacfb6c1616ff30247a400a8b7e}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=32596617a24a2c59a298954d4c33a83e}{%
+           family={Parry},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{386493aa4541f3b971913a35622a54c5}
+      \strng{fullhash}{386493aa4541f3b971913a35622a54c5}
+      \strng{authornamehash}{386493aa4541f3b971913a35622a54c5}
+      \strng{authorfullhash}{386493aa4541f3b971913a35622a54c5}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Academy of Management Journal}
+      \field{title}{On the use of polynomial regression equations as an alternative to difference scores in organizational research}
+      \field{volume}{36}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{pages}{1577\bibrangedash 1613}
+      \range{pages}{37}
+    \endentry
+    \entry{edwards_relationship_2007}{incollection}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2e86adacfb6c1616ff30247a400a8b7e}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=fedfd25350d8642e643dfb37a79d3fb6}{%
+           family={Shipp},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=34dc5b058cc6badf6e98be586babdddd}{%
+           family={Ostroff},
+           familyi={O\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7a2eae2684825642b54bb3bc5e055ed1}{%
+           family={Judge},
+           familyi={J\bibinitperiod},
+           given={T.\bibnamedelimi A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mahwah, NJ US}%
+      }
+      \list{publisher}{1}{%
+        {Lawrence Erlbaum Associates Publishers}%
+      }
+      \strng{namehash}{097d34faa38b06d1455bc8b6fd9519a5}
+      \strng{fullhash}{097d34faa38b06d1455bc8b6fd9519a5}
+      \strng{authornamehash}{097d34faa38b06d1455bc8b6fd9519a5}
+      \strng{authorfullhash}{097d34faa38b06d1455bc8b6fd9519a5}
+      \strng{editornamehash}{77732fd82db5e795809a3143fb2d6ea2}
+      \strng{editorfullhash}{77732fd82db5e795809a3143fb2d6ea2}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{(from the chapter) Research on the effects of person-environment (PE) fit reflects three overriding assumptions. First, it is generally assumed that PE fit leads to positive outcomes. Second, it is often assumed that the effects of PE fit are the same across different person and environment constructs. Third, it is widely assumed that the effects of PE fit are the same regardless of the absolute levels of the person and environment or the direction of their difference. In this chapter, we outline an approach to conceptualizing the effects of PE fit that probes those assumptions. The conceptual approach we describe is intended to encourage PE fit researchers to critically examine assumptions that characterize the investigation of the effects of PE fit on outcomes, with the ultimate goal of advancing our collective understanding of PE fit. Our goal is to demonstrate a general approach to theorizing the effects of PE fit that can be applied and extended in various specific streams of PE fit research. Although some aspects of our presentation suggest hypotheses to be tested, our chief objective is to provide some initial conceptual spadework that delves into assumptions that underlie PE fit research, with the hope that these assumptions will be further probed in future PE fit research. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (chapter)}
+      \field{booktitle}{Perspectives on Organizational Fit.}
+      \field{isbn}{0-8058-5195-X}
+      \field{series}{The organizational frontiers series}
+      \field{shorttitle}{The Relationship between Person-Environment Fit and Outcomes}
+      \field{title}{The Relationship between Person-Environment Fit and Outcomes: {{An}} Integrative Theoretical Framework}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{209\bibrangedash 258}
+      \range{pages}{50}
+    \endentry
+    \entry{edwards_study_1994}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7dba7f522a9f37bf521fa36ba070d7e8}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Jeffrey\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{fullhash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{authornamehash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{authorfullhash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0749-5978}
+      \field{journaltitle}{Organizational Behavior and Human Decision Processes}
+      \field{shorttitle}{The {{Study}} of {{Congruence}} in {{Organizational Behavior Research}}}
+      \field{title}{The Study of Congruence in Organizational Behavior Research: {{Critique}} and a Proposed Alternative}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2017}
+      \field{volume}{58}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{51\bibrangedash 100}
+      \range{pages}{50}
+      \verb{file}
+      \verb RePEc Snapshot:/Users/felix/Bibs und Backup/Zotero/storage/329H5UKJ/v_3a58_3ay_3a1994_3ai_3a1_3ap_3a51-100.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://econpapers.repec.org/article/eeejobhdp/v_3a58_3ay_3a1994_3ai_3a1_3ap_3a51-100.htm
+      \endverb
+    \endentry
+    \entry{Edwards2007}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7dba7f522a9f37bf521fa36ba070d7e8}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Jeffrey\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=a718a2594163e6a0f65d58e703e1ef1e}{%
+           family={Ostroff},
+           familyi={O\bibinitperiod},
+           given={Cheri},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7a2eae2684825642b54bb3bc5e055ed1}{%
+           family={Judge},
+           familyi={J\bibinitperiod},
+           given={T.\bibnamedelimi A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {Jossey-Bass}%
+      }
+      \strng{namehash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{fullhash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{authornamehash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{authorfullhash}{7dba7f522a9f37bf521fa36ba070d7e8}
+      \strng{editornamehash}{6bd8e265e6f07b05d61bb594fee76eb6}
+      \strng{editorfullhash}{6bd8e265e6f07b05d61bb594fee76eb6}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Perspectives on Organizational Fit}
+      \field{title}{{Polynomial regression and response surface methodology}}
+      \field{year}{2007}
+      \field{pages}{361\bibrangedash 372}
+      \range{pages}{12}
+      \verb{file}
+      \verb :C$\backslash$:/Users/s{\_}humb01.IVV5NET/Documents/Mendeley Desktop/Edwards - 2007 - Polynomial regression and response surface methodology.pdf:pdf
+      \endverb
+    \endentry
+    \entry{franken_using_2017}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=7aa9bf7bdece049f7f74bef4bac03e25}{%
+           family={Franken},
+           familyi={F\bibinitperiod},
+           given={Aart},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=1f2611ffd0ea5b1ef6abca29cd71e577}{%
+           family={Laceulle},
+           familyi={L\bibinitperiod},
+           given={Odillia\bibnamedelima M.},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=21aaea9dd203582dc15832d228aca281}{%
+           family={Van\bibnamedelima Aken},
+           familyi={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Marcel\bibnamedelima {A.G.}},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=f603a0f836e4f52f4f469468a78eb43c}{%
+           family={Ormel},
+           familyi={O\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{980fe82772e7c2f4f1152c5c6d8fdbf1}
+      \strng{fullhash}{62813bcabedfc38d1722af642184c4fe}
+      \strng{authornamehash}{980fe82772e7c2f4f1152c5c6d8fdbf1}
+      \strng{authorfullhash}{62813bcabedfc38d1722af642184c4fe}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1099-0984}
+      \field{journaltitle}{European Journal of Personality}
+      \field{number}{1}
+      \field{title}{Using Response Surface Analysis to Interpret the Impact of {Parent–Offspring} Personality Similarity on Adolescent Externalizing Problems}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{pages}{104\bibrangedash 117}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/per.2088
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1002/per.2088/abstract
+      \endverb
+      \keyw{antisocial behavior,social and personal relationships,dyadic and group analysis,statistical methods}
+    \endentry
+    \entry{Garamszegi2011}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=65076b6638acae30f55e81529a12a794}{%
+           family={Garamszegi},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi G.},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{65076b6638acae30f55e81529a12a794}
+      \strng{fullhash}{65076b6638acae30f55e81529a12a794}
+      \strng{authornamehash}{65076b6638acae30f55e81529a12a794}
+      \strng{authorfullhash}{65076b6638acae30f55e81529a12a794}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Behavioral Ecology and Sociobiology}
+      \field{number}{1}
+      \field{title}{{Information-theoretic approaches to statistical analysis in behavioural ecology: {A}n introduction}}
+      \field{volume}{65}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00265-010-1028-7
+      \endverb
+    \endentry
+    \entry{gonzalez_correlational_1999}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=16a790b9f1635d02ebe5fc48cdf9ae8d}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{uniquename=0,hash=047f53a315e8de3f41c8ad0b31141e7f}{%
+           family={Griffin},
+           familyi={G\bibinitperiod},
+           given={Dale},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e61c4b44c163d02639291d663c8eb146}
+      \strng{fullhash}{e61c4b44c163d02639291d663c8eb146}
+      \strng{authornamehash}{e61c4b44c163d02639291d663c8eb146}
+      \strng{authorfullhash}{e61c4b44c163d02639291d663c8eb146}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many theories of interpersonal relationships distinguish between individual-level processes and dyadic or group-level processes. This suggests that two-person relationships should be studied at the level of the dyad as well as at the level of the individual. We discuss correlational methods for dyads when each dyad contains two different types of individuals (e.g., a husband and wife, a mother and child, or an expert and a novice). In such dyadic interaction designs, the dyad members are said to be distinguishable. We present a method for computing the overall correlation for distinguishable dyads, and we discuss a model for separating the dyad-level and individual-level components of such a correlation. The computational techniques and their interpretation are described using data from 98 heterosexual couples.}
+      \field{day}{1}
+      \field{issn}{1475-6811}
+      \field{journaltitle}{Personal Relationships}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{The Correlational Analysis of Dyad-Level Data in the Distinguishable Case}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2016}
+      \field{volume}{6}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{449\bibrangedash 469}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1111/j.1475-6811.1999.tb00203.x
+      \endverb
+    \endentry
+    \entry{goodman_dirty_2008}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=623964142dd26e1ec71c514873923658}{%
+           family={Goodman},
+           familyi={G\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{623964142dd26e1ec71c514873923658}
+      \strng{fullhash}{623964142dd26e1ec71c514873923658}
+      \strng{authornamehash}{623964142dd26e1ec71c514873923658}
+      \strng{authorfullhash}{623964142dd26e1ec71c514873923658}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Seminars in {{Hematology}}}
+      \field{shorttitle}{A Dirty Dozen}
+      \field{title}{A Dirty Dozen: {T}welve p-Value Misconceptions}
+      \field{urlday}{8}
+      \field{urlmonth}{2}
+      \field{urlyear}{2017}
+      \field{volume}{45}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{135\bibrangedash 140}
+      \range{pages}{6}
+      \verb{file}
+      \verb Snapshot:/Users/felix/Bibs und Backup/Zotero/storage/2I85B99M/S0037196308000620.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0037196308000620
+      \endverb
+    \endentry
+    \entry{harring_comparison_2012}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=d847a901439459147c663804d9f644e6}{%
+           family={Harring},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=3fe5ca616320d191af9b26fc000856da}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=4612cf5aa6ce5c9dec2bc779b393d7e2}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6eaa20366f744efa70c5bc3c3365e630}
+      \strng{fullhash}{d38e171e779e84f24c4ae6b041b1d492}
+      \strng{authornamehash}{6eaa20366f744efa70c5bc3c3365e630}
+      \strng{authorfullhash}{d38e171e779e84f24c4ae6b041b1d492}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Two Monte Carlo simulations were performed to compare methods for estimating and testing hypotheses of quadratic effects in latent variable regression models. The methods considered in the current study were (a) a 2-stage moderated regression approach using latent variable scores, (b) an unconstrained product indicator approach, (c) a latent moderated structural equation method, (d) a fully Bayesian approach, and (e) marginal maximum likelihood estimation. Of the 5 estimation methods, it was found that overall the methods based on maximum likelihood estimation and the Bayesian approach performed best in terms of bias, root-mean-square error, standard error ratios, power, and Type I error control, although key differences were observed. Similarities as well as disparities among methods are highlight and general recommendations articulated. As a point of comparison, all 5 approaches were fit to a reparameterized version of the latent quadratic model to educational reading data. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)}
+      \field{issn}{1939-1463}
+      \field{journaltitle}{Psychological Methods}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{A Comparison of Methods for Estimating Quadratic Effects in Nonlinear Structural Equation Models}
+      \field{volume}{17}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{193\bibrangedash 214}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1037/a0027539
+      \endverb
+      \keyw{Bayesian,hypothesis testing,maximum likelihood,nonlinear models,Nonlinear Regression,quadratic,Statistical Probability,Structural Equation Modeling}
+    \endentry
+    \entry{HumbergRSA}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=d51189e8ff262db09b239991e72c5fcf}{%
+           family={Humberg},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=9342ab1633a4a310b91e9f11f1387129}{%
+           family={Nestler},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=1347f6bab73f45bea89647774a166507}{%
+           family={Back},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5fe9a6dc3a68b6800146d5db08a3d575}
+      \strng{fullhash}{7f02d3326ffb7dae291be611bf4f8478}
+      \strng{authornamehash}{5fe9a6dc3a68b6800146d5db08a3d575}
+      \strng{authorfullhash}{7f02d3326ffb7dae291be611bf4f8478}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Psychological and Personality Science}
+      \field{title}{Response Surface Analysis in personality and social psychology: {C}hecklist and clarifications for the case of congruence hypotheses}
+      \field{year}{in press}
+      \verb{url}
+      \verb osf.io/mhf2y
+      \endverb
+    \endentry
+    \entry{ilmarinen_homophilous_2017}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=41e7aa60fb6c2039467b13e21ab067cb}{%
+           family={Ilmarinen},
+           familyi={I\bibinitperiod},
+           given={Ville-Juhani},
+           giveni={V\bibinithyphendelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=1351babc12d2ac0740806661c306ddfe}{%
+           family={Vainikainen},
+           familyi={V\bibinitperiod},
+           given={Mari-Pauliina},
+           giveni={M\bibinithyphendelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=b93c886cd73fca21b0f75f9a0cbff16b}{%
+           family={Verkasalo},
+           familyi={V\bibinitperiod},
+           given={Markku\bibnamedelima Johannes},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=87ae93fc9d243b05d5b736d58bed6eb7}{%
+           family={Lönnqvist},
+           familyi={L\bibinitperiod},
+           given={Jan-Erik},
+           giveni={J\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1728b306562a0eaced6ff8d75339293e}
+      \strng{fullhash}{6c8e5b15e859fc1ef36eb0fe2d9fad38}
+      \strng{authornamehash}{1728b306562a0eaced6ff8d75339293e}
+      \strng{authorfullhash}{6c8e5b15e859fc1ef36eb0fe2d9fad38}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1099-0984}
+      \field{journaltitle}{European Journal of Personality}
+      \field{number}{3}
+      \field{shorttitle}{Homophilous Friendship Assortment Based on Personality Traits and Cognitive Ability in Middle Childhood}
+      \field{title}{Homophilous Friendship Assortment Based on Personality Traits and Cognitive Ability in Middle Childhood: {T}he Moderating Effect of Peer Network Size}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{pages}{208\bibrangedash 219}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/per.2095
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1002/per.2095/abstract
+      \endverb
+      \keyw{friendships,childhood,cognitive ability,homophily,personality,social networks}
+    \endentry
+    \entry{Johns1981}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=677ae7c1d9bfa003c733342870b77e68}{%
+           family={Johns},
+           familyi={J\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{677ae7c1d9bfa003c733342870b77e68}
+      \strng{fullhash}{677ae7c1d9bfa003c733342870b77e68}
+      \strng{authornamehash}{677ae7c1d9bfa003c733342870b77e68}
+      \strng{authorfullhash}{677ae7c1d9bfa003c733342870b77e68}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Organizational Behavior and Human Performance}
+      \field{title}{Difference score measures of organizational behavior variables: {A} critique}
+      \field{volume}{27}
+      \field{year}{1981}
+      \field{pages}{443\bibrangedash 463}
+      \range{pages}{21}
+    \endentry
+    \entry{KennyAcitelli1994}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=6baa68fdbb79b3604eabf6d55f799757}{%
+           family={Acitelli},
+           familyi={A\bibinitperiod},
+           given={L.\bibnamedelimi K.},
+           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c6bc01d48da35e8a9ea51741baf9f5b}
+      \strng{fullhash}{6c6bc01d48da35e8a9ea51741baf9f5b}
+      \strng{authornamehash}{6c6bc01d48da35e8a9ea51741baf9f5b}
+      \strng{authorfullhash}{6c6bc01d48da35e8a9ea51741baf9f5b}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Family Psychology}
+      \field{title}{Measuring similarity in couples}
+      \field{volume}{8}
+      \field{year}{1994}
+      \field{pages}{417\bibrangedash 431}
+      \range{pages}{15}
+    \endentry
+    \entry{kenny_partner_1999}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=8d08aa19bdbf07581bb39b0c0fa5346f}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{07ec8f1f1b80a48f6ce6881569cd4f09}
+      \strng{fullhash}{07ec8f1f1b80a48f6ce6881569cd4f09}
+      \strng{authornamehash}{07ec8f1f1b80a48f6ce6881569cd4f09}
+      \strng{authorfullhash}{07ec8f1f1b80a48f6ce6881569cd4f09}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Personal Relationships}
+      \field{number}{4}
+      \field{shorttitle}{Partner Effects in Relationship Research}
+      \field{title}{Partner Effects in Relationship Research: {{Conceptual}} Issues, Analytic Difficulties, and Illustrations}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2014}
+      \field{volume}{6}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{433\bibrangedash 448}
+      \range{pages}{16}
+    \endentry
+    \entry{kenny_dyadic_2006}{book}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=a9b16054eb35475d366b13c5b26903f7}{%
+           family={Kashy},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=d69dd334f7a6215c0485152343bde058}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Guilford}%
+      }
+      \strng{namehash}{75d16d8f48647861044bcfcfdbe20d25}
+      \strng{fullhash}{e787535173a187d15f86a4096669d388}
+      \strng{authornamehash}{75d16d8f48647861044bcfcfdbe20d25}
+      \strng{authorfullhash}{e787535173a187d15f86a4096669d388}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dyadic Data Analysis}
+      \field{year}{2006}
+      \field{dateera}{ce}
+    \endentry
+    \entry{KennyLedermann2010}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=59c269e6ae963bf8cd8627c2059f03d9}{%
+           family={Ledermann},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{58b6293cb8724714fadd682740fe5885}
+      \strng{fullhash}{58b6293cb8724714fadd682740fe5885}
+      \strng{authornamehash}{58b6293cb8724714fadd682740fe5885}
+      \strng{authorfullhash}{58b6293cb8724714fadd682740fe5885}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Family Psychology}
+      \field{title}{Detecting, measuring, and testing dyadic patterns in the actor–partner interdependence model}
+      \field{volume}{24}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{359\bibrangedash 366}
+      \range{pages}{8}
+    \endentry
+    \entry{McClelland_Judd_1993}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=dfcadb5b79a8ced5f53e3dd17c159511}{%
+           family={McClelland},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{uniquename=0,hash=855cb05ace43554567ac20ef904b1948}{%
+           family={Judd},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{99992a1cf2b582e87aff892b24fc3382}
+      \strng{fullhash}{99992a1cf2b582e87aff892b24fc3382}
+      \strng{authornamehash}{99992a1cf2b582e87aff892b24fc3382}
+      \strng{authorfullhash}{99992a1cf2b582e87aff892b24fc3382}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1939-1455(Electronic);0033-2909(Print)}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{number}{2}
+      \field{title}{Statistical difficulties of detecting interactions and moderator effects}
+      \field{volume}{114}
+      \field{year}{1993}
+      \field{pages}{376\bibrangedash 390}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1037/0033-2909.114.2.376
+      \endverb
+    \endentry
+    \entry{Meredith_2006}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=e12ba9e008f81aebcb0f827a97c1cafc}{%
+           family={Meredith},
+           familyi={M\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{uniquename=0,hash=b58d57a227b96398c94e5c0d10534351}{%
+           family={Teresi},
+           familyi={T\bibinitperiod},
+           given={J\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5802ef5f285d9078f81c68dc2d54f54}
+      \strng{fullhash}{e5802ef5f285d9078f81c68dc2d54f54}
+      \strng{authornamehash}{e5802ef5f285d9078f81c68dc2d54f54}
+      \strng{authorfullhash}{e5802ef5f285d9078f81c68dc2d54f54}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Care}
+      \field{number}{11}
+      \field{title}{An essay on measurement and factorial invariance}
+      \field{volume}{44}
+      \field{year}{2006}
+      \field{pages}{S69\bibrangedash S77}
+      \range{pages}{-1}
+    \endentry
+    \entry{montgomery_introduction_2012}{book}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=473ca63b37747389b33a6e2fe22ebb72}{%
+           family={Montgomery},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{uniquename=0,hash=7d4bbe8b2e871cf928eb9cfa71ab56d9}{%
+           family={Peck},
+           familyi={P\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=7740b97d5123a60717066bd10569d897}{%
+           family={Vining},
+           familyi={V\bibinitperiod},
+           given={G.\bibnamedelimi G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{f6c2a3f14374143f80b0ba16f05f5e53}
+      \strng{fullhash}{22d1732f17bb5fbcaf91ca24b1f674ae}
+      \strng{authornamehash}{f6c2a3f14374143f80b0ba16f05f5e53}
+      \strng{authorfullhash}{22d1732f17bb5fbcaf91ca24b1f674ae}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Praise for the Fourth Edition"As with previous editions, the authors have produced a leading textbook on regression."—Journal of the American Statistical AssociationA comprehensive and up-to-date introduction to the fundamentals of regression analysisIntroduction to Linear Regression Analysis, Fifth Edition continues to present both the conventional and less common uses of linear regression in today's cutting-edge scientific research. The authors blend both theory and application to equip readers with an understanding of the basic principles needed to apply regression model-building techniques in various fields of study, including engineering, management, and the health sciences.Following a general introduction to regression modeling, including typical applications, a host of technical tools are outlined such as basic inference procedures, introductory aspects of model adequacy checking, and polynomial regression models and their variations. The book then discusses how transformations and weighted least squares can be used to resolve problems of model inadequacy and also how to deal with influential observations. The Fifth Edition features numerous newly added topics, including:A chapter on regression analysis of time series data that presents the Durbin-Watson test and other techniques for detecting autocorrelation as well as parameter estimation in time series regression modelsRegression models with random effects in addition to a discussion on subsampling and the importance of the mixed modelTests on individual regression coefficients and subsets of coefficientsExamples of current uses of simple linear regression models and the use of multiple regression models for understanding patient satisfaction dataIn addition to Minitab, SAS, and S-PLUS, the authors have incorporated JMP and the freely available R software to illustrate the discussed techniques and procedures in this new edition. Numerous exercises have been added throughout, allowing readers to test their understanding of the material, and a related FTP site features the presented data sets, extensive problem solutions, software hints, and PowerPoint slides to facilitate instructional use of the book.Introduction to Linear Regression Analysis, Fifth Edition is an excellent book for statistics and engineering courses on regression at the upper-undergraduate and graduate levels. The book also serves as a valuable, robust resource for professionals in the fields of engineering, life and biological sciences, and the social sciences.}
+      \field{title}{Introduction to Linear Regression Analysis}
+      \field{year}{2012}
+      \field{dateera}{ce}
+    \endentry
+    \entry{NestlerEtAl2015}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=9342ab1633a4a310b91e9f11f1387129}{%
+           family={Nestler},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=542ae83305f6da6343bbfb860e69334e}{%
+           family={Grimm},
+           familyi={G\bibinitperiod},
+           given={K.\bibnamedelimi J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=2fda45d2b487f4b39105d51b86f298d6}{%
+           family={Schönbrodt},
+           familyi={S\bibinitperiod},
+           given={F.\bibnamedelimi D.},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8358c827acf600acdca4d20d550dd835}
+      \strng{fullhash}{429fb7b575e9cdfc2e9c974654e84e25}
+      \strng{authornamehash}{8358c827acf600acdca4d20d550dd835}
+      \strng{authorfullhash}{429fb7b575e9cdfc2e9c974654e84e25}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Personality}
+      \field{title}{The Social Consequences and Mechanisms of Personality: {H}ow to Analyse Longitudinal Data from Individual, Dyadic, Round-Robin and Network Designs}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{272\bibrangedash 295}
+      \range{pages}{24}
+    \endentry
+    \entry{olderbak_predicting_2017}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=96c223deecb562b9b37d3682ee8704f6}{%
+           family={Olderbak},
+           familyi={O\bibinitperiod},
+           given={Sally\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=ee91754f7ab78dbc78d33e969d669650}{%
+           family={Malter},
+           familyi={M\bibinitperiod},
+           given={Frederic},
+           giveni={F\bibinitperiod}}}%
+        {{uniquename=0,hash=e68729448589da5255d030ef37ddd3c2}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Pedro\bibnamedelimb Sofio\bibnamedelima Abril},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=4e2ca6a43a2448de121f380cd101bd22}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Daniel\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=4603ca93ff7173e6d11256d415eb191f}{%
+           family={Figueredo},
+           familyi={F\bibinitperiod},
+           given={Aurelio\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{83322a9517a0c69326d875ce9a0caec1}
+      \strng{fullhash}{2d295622e6975042721b842452b396d1}
+      \strng{authornamehash}{83322a9517a0c69326d875ce9a0caec1}
+      \strng{authorfullhash}{2d295622e6975042721b842452b396d1}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1099-0984}
+      \field{journaltitle}{European Journal of Personality}
+      \field{number}{1}
+      \field{shorttitle}{Predicting Romantic Interest at Zero Acquaintance}
+      \field{title}{Predicting Romantic Interest at Zero Acquaintance: {E}vidence of Sex Differences in Trait Perception but Not in Predictors of Interest}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{pages}{42\bibrangedash 62}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1002/per.2087
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1002/per.2087/abstract
+      \endverb
+      \keyw{social relations model,multilevel model,attraction,polynomial regression,Big Five personality factors,life history strategy,mate value,response surface analysis,trait perception}
+    \endentry
+    \entry{olsen_structural_2006}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a16e2325d1eff2a2eb081f014a2b3488}{%
+           family={Olsen},
+           familyi={O\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{08dd3368ee579e7f997b02a12aa1e436}
+      \strng{fullhash}{08dd3368ee579e7f997b02a12aa1e436}
+      \strng{authornamehash}{08dd3368ee579e7f997b02a12aa1e436}
+      \strng{authorfullhash}{08dd3368ee579e7f997b02a12aa1e436}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1939-1463}
+      \field{journaltitle}{Psychological Methods}
+      \field{number}{2}
+      \field{title}{Structural Equation Modeling with Interchangeable Dyads.}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2011}
+      \field{volume}{11}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{127\bibrangedash 141}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1037/1082-989X.11.2.127
+      \endverb
+      \verb{file}
+      \verb PsycNET - Direct Products:/Volumes/HDD/Rechner/Zotero/storage/WIVN3IXF/psycnet.apa.org.html:text/html
+      \endverb
+    \endentry
+    \entry{PeterEtAl1993}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=fddd8ad2e6e55103c5f161e2a25121c4}{%
+           family={Peter},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=cba7d4b4d65521b4868517c3333e1a6e}{%
+           family={Churchill},
+           familyi={C\bibinitperiod},
+           given={G.\bibnamedelimi A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=2f794715182fca69ba75a0c7bb136738}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{357853378c9a5bd9de76bee69d69ca8d}
+      \strng{fullhash}{b409a15bbb68898bdfefbd34f24541ce}
+      \strng{authornamehash}{357853378c9a5bd9de76bee69d69ca8d}
+      \strng{authorfullhash}{b409a15bbb68898bdfefbd34f24541ce}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Consumer Research}
+      \field{title}{Caution in the use of difference scores in consumer research}
+      \field{volume}{19}
+      \field{year}{1993}
+      \field{pages}{655\bibrangedash 662}
+      \range{pages}{8}
+    \endentry
+    \entry{r_core_team_r:_2014}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a902f7a1275f47f57554b7ea75ccd0bc}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \strng{namehash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \strng{fullhash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \strng{authornamehash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \strng{authorfullhash}{a902f7a1275f47f57554b7ea75ccd0bc}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: {{A}} Language and Environment for Statistical Computing}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb http://www.R-project.org/
+      \endverb
+    \endentry
+    \entry{rosseel_lavaan:_2012-1}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c4bcbfb7fc2a51c12801878870e3db94}{%
+           family={Rosseel},
+           familyi={R\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4bcbfb7fc2a51c12801878870e3db94}
+      \strng{fullhash}{c4bcbfb7fc2a51c12801878870e3db94}
+      \strng{authornamehash}{c4bcbfb7fc2a51c12801878870e3db94}
+      \strng{authorfullhash}{c4bcbfb7fc2a51c12801878870e3db94}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{2}
+      \field{title}{{l}avaan: {{An R}} Package for Structural Equation Modeling}
+      \field{volume}{48}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+    \endentry
+    \entry{rousseeuw_bagplot:_1999}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=4471592951627f99da014834e991604c}{%
+           family={Rousseeuw},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=4465ddf6543948ef357de11febe85eeb}{%
+           family={Ruts},
+           familyi={R\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{uniquename=0,hash=7c5e9279336e64ecfc639b601d10d188}{%
+           family={Tukey},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8f2e2cb8de7acdb4b875a08298f5efa}
+      \strng{fullhash}{2f97ffcc4d608bd750e04641418b2f81}
+      \strng{authornamehash}{f8f2e2cb8de7acdb4b875a08298f5efa}
+      \strng{authorfullhash}{2f97ffcc4d608bd750e04641418b2f81}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{4}
+      \field{title}{The Bagplot: {{A}} Bivariate Boxplot}
+      \field{volume}{53}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{382\bibrangedash 387}
+      \range{pages}{6}
+    \endentry
+    \entry{schafer_missing_2002}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=1db323a8c1b976ce77980a0fb7764a5b}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{uniquename=0,hash=4c6da7cb5e7397042afc5c54f565a7ff}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cf7a4840ed9937fa7c076ec16f51b57}
+      \strng{fullhash}{4cf7a4840ed9937fa7c076ec16f51b57}
+      \strng{authornamehash}{4cf7a4840ed9937fa7c076ec16f51b57}
+      \strng{authorfullhash}{4cf7a4840ed9937fa7c076ec16f51b57}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Statistical procedures for missing data have vastly improved, yet misconception and unsound practice still abound. The authors frame the missing-data problem, review methods, offer advice, and raise issues that remain unresolved. They clear up common misunderstandings regarding the missing at random (MAR) concept. They summarize the evidence against older procedures and, with few exceptions, discourage their use. They present, in both technical and practical language, 2 general approaches that come highly recommended: maximum likelihood (ML) and Bayesian multiple imputation (MI). Newer developments are discussed, including some for dealing with missing data that are not MAR. Although not yet in the mainstream, these procedures may eventually extend the ML and MI methods that currently represent the state of the art.}
+      \field{eprinttype}{pmid}
+      \field{issn}{1082-989X}
+      \field{journaltitle}{Psychological Methods}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{Psychol Methods}
+      \field{shorttitle}{Missing Data}
+      \field{title}{Missing Data: {{Our}} View of the State of the Art}
+      \field{volume}{7}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{147\bibrangedash 177}
+      \range{pages}{31}
+      \verb{eprint}
+      \verb 12090408
+      \endverb
+    \endentry
+    \entry{schonbrodt_testing_2015}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5b98b80dc825c3d39f02a6896b0ab3cd}{%
+           family={Schönbrodt},
+           familyi={S\bibinitperiod},
+           given={Felix\bibnamedelima D.},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Ludwig-Maximilians-Universität München}%
+      }
+      \list{location}{1}{%
+        {Munich, Germany}%
+      }
+      \strng{namehash}{5b98b80dc825c3d39f02a6896b0ab3cd}
+      \strng{fullhash}{5b98b80dc825c3d39f02a6896b0ab3cd}
+      \strng{authornamehash}{5b98b80dc825c3d39f02a6896b0ab3cd}
+      \strng{authorfullhash}{5b98b80dc825c3d39f02a6896b0ab3cd}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fit hypotheses, also labeled `congruence', `discrepancy', or `congruity' hypotheses, contain the notion that an outcome is optimal when two predictor variables match well, while incongruent/ discrepant combinations of the predictors lead to a suboptimal outcome. Previous statistical frameworks for analyzing fit hypotheses emphasized the necessity of commensurable scales, which means that both predictors must be measured on the same content dimension and on the same numerical scale. In some research areas, however, it is impossible to achieve scale equivalence, because the predictors have to be measured with di$\carriagereturn$erent methods, such as ex- plicit attitudes (e.g., questionnaires) and implicit attitudes (e.g., reaction time task). In this paper, I di$\carriagereturn$erentiate numerical congruence from fit patterns, a concept that does not depend on the notion of commensurability, and hence can be applied to fit hypotheses with incom- mensurable scales. Polynomial regression can be used to test for the presence of a fit pattern in empirical data. I propose several new regression models for testing fit patterns which are statistically simpler and conceptually more meaningful than a full polynomial model. An R package is introduced which provides user-friendly functions for the computation, visualiza- tion, and model comparison of several fit patterns. An empirical example on implicit/explicit motive fit demonstrates the usage of the new methods.}
+      \field{title}{Testing Fit Patterns with Polynomial Regression Models}
+      \field{urlday}{23}
+      \field{urlmonth}{3}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://osf.io/ndggf
+      \endverb
+    \endentry
+    \entry{schonbrodt_rsa:_2016}{manual}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=5b98b80dc825c3d39f02a6896b0ab3cd}{%
+           family={Schönbrodt},
+           familyi={S\bibinitperiod},
+           given={Felix\bibnamedelima D.},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{uniquename=0,hash=5cf036d59421f26cf2cbf7b706335b09}{%
+           family={Humberg},
+           familyi={H\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{597ba9f469c3724eb12e9c2b550161e3}
+      \strng{fullhash}{597ba9f469c3724eb12e9c2b550161e3}
+      \strng{authornamehash}{597ba9f469c3724eb12e9c2b550161e3}
+      \strng{authorfullhash}{597ba9f469c3724eb12e9c2b550161e3}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{RSA}: {A}n {R} package for response surface analysis (version 0.9.12)}
+      \field{year}{2018}
+      \verb{url}
+      \verb https://cran.r-project.org/package=RSA
+      \endverb
+    \endentry
+    \entry{shanock_polynomial_2010}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=c39335415be5f1b88d7b8900b53e9004}{%
+           family={Shanock},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=ab8a87b212f63a7e95d9a1d5b958ce7f}{%
+           family={Baran},
+           familyi={B\bibinitperiod},
+           given={B.\bibnamedelimi E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{uniquename=0,hash=983c93b3941535bb734b4c0b9fe87ed7}{%
+           family={Gentry},
+           familyi={G\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=ff40f9279762426304c869747f37015a}{%
+           family={Pattison},
+           familyi={P\bibinitperiod},
+           given={S.\bibnamedelimi C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{uniquename=0,hash=2520e66519952252883bd3fb0bf3fbe3}{%
+           family={Heggestad},
+           familyi={H\bibinitperiod},
+           given={E.\bibnamedelimi D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e42ed82f5cd308cfb66427e7c088807}
+      \strng{fullhash}{9836a6c7cdce0d927f09c44bfe3fe34e}
+      \strng{authornamehash}{7e42ed82f5cd308cfb66427e7c088807}
+      \strng{authorfullhash}{9836a6c7cdce0d927f09c44bfe3fe34e}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Polynomial regression with response surface analysis is a sophisticated statistical approach that has become increasingly popular in multisource feedback research (e.g., self-observer rating discrepancy). The approach allows researchers to examine the extent to which combinations of two predictor variables relate to an outcome variable, particularly in the case when the discrepancy (difference) between the two predictor variables is a central consideration. We believe this approach has potential for application to a wide variety of research questions. To enhance interest and use of this technique, we provide ideas for future research directions that might benefit from the application of this analytic tool. We also walk through a step-by-step example of how to conduct polynomial regression and response surface analysis and provide all the tools you will need to do the analyses and graph the results (including SPSS syntax, formulas, and a downloadable Excel spreadsheet). Our example involves how discrepancies in perceived supervisor and organizational support relate to affective commitment. Finally, we discuss how this approach is a better, more informative alternative to difference scores and can be applied to the examination of two-way interactions in moderated regression.}
+      \field{day}{1}
+      \field{issn}{0889-3268, 1573-353X}
+      \field{journaltitle}{Journal of Business and Psychology}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{J Bus Psychol}
+      \field{shorttitle}{Polynomial {{Regression}} with {{Response Surface Analysis}}}
+      \field{title}{Polynomial Regression with Response Surface Analysis: {{A}} Powerful Approach for Examining Moderation and Overcoming Limitations of Difference Scores}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2012}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{543\bibrangedash 554}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s10869-010-9183-4
+      \endverb
+      \verb{file}
+      \verb Snapshot:/Users/felix/Bibs und Backup/Zotero/storage/T563JTWN/10.html:text/html
+      \endverb
+      \keyw{Business/Management Science; general,Community and Environmental Psychology,Job attitudes,Personality and Social Psychology,polynomial regression,Research methods,Response surface analysis,Social Sciences; general,Two-way interactions}
+    \endentry
+    \entry{Strauss2001}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=64ce6f1544555c8f483fd7960b60e5b7}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=084a8ab80e728e7d206ffdfea5ab3be4}{%
+           family={Barrick},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{uniquename=0,hash=5aa5c586a844d1fa14f650258a46ea86}{%
+           family={Connerley},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2aab37f40bcfe9ca3c711ac4bdaa2aa7}
+      \strng{fullhash}{873b69f728ef7ae929cefc070818a635}
+      \strng{authornamehash}{2aab37f40bcfe9ca3c711ac4bdaa2aa7}
+      \strng{authorfullhash}{873b69f728ef7ae929cefc070818a635}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Occupational and Organizational Psychology}
+      \field{title}{An investigation of personality similarity effects (relational and perceived) on peer and supervisor ratings and the role of familiarity and liking}
+      \field{volume}{74}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{637\bibrangedash 657}
+      \range{pages}{21}
+    \endentry
+    \entry{symonds_brief_2011}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=03a3228e4a5b7a3877d24cd9c1297ae7}{%
+           family={Symonds},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelimb R.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{uniquename=0,hash=d93ca39a794c8314410ab3dcea3c9282}{%
+           family={Moussalli},
+           familyi={M\bibinitperiod},
+           given={Adnan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9414872b7db418558a9d5516f3f62ab4}
+      \strng{fullhash}{9414872b7db418558a9d5516f3f62ab4}
+      \strng{authornamehash}{9414872b7db418558a9d5516f3f62ab4}
+      \strng{authorfullhash}{9414872b7db418558a9d5516f3f62ab4}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0340-5443, 1432-0762}
+      \field{journaltitle}{Behavioral Ecology and Sociobiology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A Brief Guide to Model Selection, Multimodel Inference and Model Averaging in Behavioural Ecology Using {{Akaike}}’s Information Criterion}
+      \field{volume}{65}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{13\bibrangedash 21}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s00265-010-1037-6
+      \endverb
+    \endentry
+    \entry{tufte_visual_2001}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=07bb67356ea4ccd6bf5f968d4bd5c0b7}{%
+           family={Tufte},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Englisch}%
+      }
+      \list{location}{1}{%
+        {Connecticut}%
+      }
+      \list{publisher}{1}{%
+        {Graphics Press}%
+      }
+      \strng{namehash}{07bb67356ea4ccd6bf5f968d4bd5c0b7}
+      \strng{fullhash}{07bb67356ea4ccd6bf5f968d4bd5c0b7}
+      \strng{authornamehash}{07bb67356ea4ccd6bf5f968d4bd5c0b7}
+      \strng{authorfullhash}{07bb67356ea4ccd6bf5f968d4bd5c0b7}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd edition}
+      \field{isbn}{978-0-9613921-4-7}
+      \field{month}{1}
+      \field{title}{{The visual display of quantitative information}}
+      \field{year}{2001}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Weidmann_2017}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=1b2cee802aa96b49485ac3353fbef357}{%
+           family={Weidmann},
+           familyi={W\bibinitperiod},
+           given={Rebekka},
+           giveni={R\bibinitperiod}}}%
+        {{uniquename=0,hash=5b98b80dc825c3d39f02a6896b0ab3cd}{%
+           family={Schönbrodt},
+           familyi={S\bibinitperiod},
+           given={Felix\bibnamedelima D.},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{uniquename=0,hash=6054cec0bcc7c6b91728f42d7a00234a}{%
+           family={Ledermann},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{uniquename=0,hash=e1131fdfb10f550aeb926204af9618dc}{%
+           family={Grob},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a92d232dc14a693549cd397e0e72b4e}
+      \strng{fullhash}{6cd5424e3c85db2b9ef01450860970ab}
+      \strng{authornamehash}{5a92d232dc14a693549cd397e0e72b4e}
+      \strng{authorfullhash}{6cd5424e3c85db2b9ef01450860970ab}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0092-6566}
+      \field{journaltitle}{Journal of Research in Personality}
+      \field{title}{Concurrent and longitudinal dyadic polynomial regression analyses of Big Five traits and relationship satisfaction: {D}oes similarity matter?}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.jrp.2017.04.003
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0092656616302495
+      \endverb
+    \endentry
+    \entry{wilkinson_statistical_1999}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=92703240a3f40acefda2ed36cbd0ed5b}{%
+           family={Wilkinson},
+           familyi={W\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{uniquename=0,hash=d3c2112ab402ed3569f116b4327274dc}{%
+           family={{Task Force on Statistical Inference}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cb2aad5fe0650445ad927e2119d203f}
+      \strng{fullhash}{1cb2aad5fe0650445ad927e2119d203f}
+      \strng{authornamehash}{1cb2aad5fe0650445ad927e2119d203f}
+      \strng{authorfullhash}{1cb2aad5fe0650445ad927e2119d203f}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1935-990X}
+      \field{journaltitle}{American Psychologist}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shorttitle}{Statistical Methods in Psychology Journals}
+      \field{title}{Statistical Methods in Psychology Journals: {{Guidelines}} and Explanations}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2013}
+      \field{volume}{54}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{594\bibrangedash 604}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1037/0003-066X.54.8.594
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

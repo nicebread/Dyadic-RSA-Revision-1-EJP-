@@ -7,6 +7,23 @@
 \usepackage[]{graphicx}
 \usepackage[]{color}
 
+%------------------------------------------------
+% Track changes
+\definecolor{colour_added}{rgb}{.1,.6,.1}
+\definecolor{colour_removed}{rgb}{.8,.1,.1}
+\definecolor{colour_moved}{rgb}{.1,.1,.8}
+%For rendering the changes:
+\newcommand{\added}[1]{\textcolor{colour_added}{\bf{#1}}}
+\newcommand{\removed}[1]{\textcolor{colour_removed}{#1}}
+\newcommand{\moved}[1]{\textcolor{colour_moved}{#1}}
+
+%For rendering the clean version:
+% \newcommand{\added}[1]{#1}
+% \newcommand{\removed}[1]{}
+% \newcommand{\moved}[1]{#1}
+
+%------------------------------------------------
+
 \usepackage{alltt}
 \usepackage[american]{babel}
 \usepackage[T1]{fontenc}
@@ -187,7 +204,7 @@ The key idea behind RSA is a visualization of the estimated regression equation 
 \begin{figure}[ht!]
 \centering
 \fitfigure{plots/Fig1_edited.pdf}
-\caption{A prototypical similarity effect: Response surface of the estimated regression equation $Z = 4 + 0X + 0Y - 0.25X^2 + 0.5XY - 0.25Y^2$. The circle on the cube's bottom is the position of a dyad's predictor variables (female:0, male: -1), the star is the corresponding predicted variable of the outcome variable on the response surface. Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
+\caption{\added{A prototypical similarity effect: Response surface of the estimated regression equation $Z = 4 + 0X + 0Y - 0.25X^2 + 0.5XY - 0.25Y^2$. The circle on the cube's bottom is the position of a dyad's predictor variables (female:0, male: -1), the star is the corresponding predicted variable of the outcome variable on the response surface.} Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
 \label{fig:sqd}
 \end{figure}
 
@@ -298,7 +315,7 @@ This kind of common centering across genders is necessary for two reasons. First
 In a full DRSA model, 10 directed path coefficients are estimated (along with the (co)variances), which can be quite a large number depending on the sample size. Both for parsimony and for testing substantive theoretical predictions, constraints can be applied that simplify the full model.
 
 \emph{Constraining path coefficients.}
-Path coefficients can be constrained based on multiple principles. From a dyadic data analysis point of view, one can test whether some path coefficients do (not) differ from zero, and whether some path coefficients are equal for both genders. \textcite{kenny_partner_1999} distinguish several patterns of actor effects and partner effects which reflect meaningful psychological phenomena:
+Path coefficients \added{within a surface} can be constrained based on multiple principles. From a dyadic data analysis point of view, one can test whether some path coefficients do (not) differ from zero, and whether some path coefficients are equal for both genders. \textcite{kenny_partner_1999} distinguish several patterns of actor effects and partner effects which reflect meaningful psychological phenomena:
 
 \begin{description}
 	\item[actor-oriented:] actor effects $\neq 0$, partner effects $= 0$
@@ -307,7 +324,8 @@ Path coefficients can be constrained based on multiple principles. From a dyadic
 	\item[social comparison:] actor effects = $-$partner effects
 \end{description}
 
-Actor-oriented patterns assume that a person is only affected by his or her own predictor score, but not by the partner's predictor score. Partner-oriented patterns assume that a person's outcome is only affected by the partner's score, but not by his or her own score. A couple-oriented pattern implies that the sum (or the average) of the dyad's predictors determines the outcome. This means, that the own and the partner's standing are equally important for the outcome, and that own sufficiencies can be compensated by the partner. A social comparison pattern, in contrast, implies that the outcome increases when the \emph{difference} between the own and the partner's score increases.
+Actor-oriented patterns assume that a person is only affected by his or her own predictor score, but not by the partner's predictor score. Partner-oriented patterns assume that a person's outcome is only affected by the partner's score, but not by his or her own score. A couple-oriented pattern implies that the sum (or the average) of the dyad's predictors determines the outcome. This means, that the own and the partner's standing are equally important for the outcome, and that own sufficiencies can be compensated by the partner. A social comparison pattern, in contrast, implies that the outcome increases when the \emph{difference} between the own and the partner's score increases. \added{Note that these four constraints are applied \emph{within} the male, respectively the female, surface, and do not equate parameters \emph{between} the male and the female surface. Hence, it is technically possible that the female surface follows, for example, an actor-oriented pattern (i.e., $b_{1f}$ or $b_{3f} \neq 0$, $b_{2f} = b_{4f} = b_{5f} = 0$) while the male surface follows a partner-oriented pattern (i.e., $b_{1m}$ or $b_{3m} \neq 0$, $b_{2m} = b_{4m} = b_{5m} = 0$), or any other combination of patterns. Additional between-role constraints can be added to test whether both roles follow the same within-role constraints (e.g., whether both roles follow an couple-oriented pattern with the same parameters).
+}
 
 These classical APIM constraints only refer to the linear main effects. In the extended polynomial regressions of the DRSA, further constraints have to be defined for the higher order terms. For example, for a pure actor-oriented pattern, additionally all partner effects and the interaction terms should be zero, whereas the higher order actor effects could be unequal to zero.
 
@@ -324,15 +342,15 @@ Not all models, however, are nested. For example, the partner-oriented pattern i
 There are several reasons for testing constraints on the full model. First, in an exploratory analysis, the patterns of APIM constraints and of the RSA constraints can be used to give post-hoc descriptions to the results of an analysis (e.g., ``The data follows a partner-oriented pattern''). Second, constrained models can be understood as confirmatory hypotheses. To test such a hypothesis, one would test the theoretically predicted model with constraints against an unconstrained model. If the constrained model is not significantly worse than the unconstrained model, it is retained as a more parsimonious model and the theory is corroborated. Finally, as a pragmatic reason to apply constraints, they also increase power. If men's and women's effects are not significantly different from each other, the respective paths can be set equal. These constraints effectively increase the sample size and the power to detect smaller effects. However, as always is the case with a non-rejected null hypothesis, a non-significant difference of paths on its own is no direct evidence of `no difference' \parencite[e.g.,][]{goodman_dirty_2008}, but should rather be interpreted as `not enough power to detect a potential difference', depending on the sample size and the smallest effect size of interest.
 
 \subsubsection{Dyadic RSA for indistinguishable dyads}
-{\color{blue}So far we focused only on noninterchangeable dyads, but the procedure can also be adapted to dyads that are naturally interchangeable, following the approach of \textcite{olsen_structural_2006}. Furthermore, even if dyads have a potentially distinguishing variable, such as gender, their means, variances, and covariances could be statistically indistinguishable. The omnibus SEM test for distinguishability tests for these equalities (see \nptextcite{gonzalez_correlational_1999}, and \nptextcite{kenny_dyadic_2006}, pp. 129-131).
+\added{So far we focused only on noninterchangeable dyads, but the procedure can also be adapted to dyads that are naturally interchangeable, following the approach of \textcite{olsen_structural_2006}. Furthermore, even if dyads have a potentially distinguishing variable, such as gender, their means, variances, and covariances could be statistically indistinguishable. The omnibus SEM test for distinguishability tests for these equalities (see \nptextcite{gonzalez_correlational_1999}, and \nptextcite{kenny_dyadic_2006}, pp. 129-131).
 
 If dyads are naturally interchangeable, several constraints must be applied to the SEM \parencite{olsen_structural_2006}: Equal (linear and squared) actor effects, equal (linear and squared) partner effects, equal predictor means, equal predictor variances, equal outcome intercepts, and equal residual variances. The accompanying \textit{R} code contains an example how to set up such a model. In the remainder of the paper, however, we focus on distinguishable dyads.
 }
 
 
 \subsubsection{Power analysis / Sample size planning}
-{\color{blue}
-Planning for appropriate sample sizes is a necessary step to draw strong inferences from a data set. Doing a power analysis for models with multiple predictors and correlated outcomes, however, is not trivial, as it requires to define a priori several (co)variance components and multiple effect sizes which themselves depend on the reliability of the measured variables and their higher terms, many of which might be hard to estimate. An in-depth treatment of this topic is beyond the scope of this paper, but we want to outline some rules of thumb. A general recommendation for higher order terms provided by \textcite{Aiken_West_1991} is to assess 2-3 times as many participants as one would need to detect linear effects of the predictors. Another possibility for reducing complexity would be to collapse multiple parameter estimates into a single index of effect size, namely the increase in explained variance $\Delta R^2$ of 5\%. This could relate, for example, to the increase in explained variance that a congruence effect (i.e., a negative a₄) explains beyond the two main effects. For example, to detect a $\Delta R^2$ of 5\% with a statistical power of 90\% (α = 5\%) in a non-dyadic RSA, around 200 participants are needed if a single parameter, such as a₄ in a squared difference model, explains the additional variance. The impact of the dyadic nature of the data depends on the intra-class-correlation of the outcome variable, where the effective sample size is somewhere between the number of individuals and the number of dyads. If actor and partner effects can be constrained to be equal across roles, this effectively increases the sample size. Beyond these simple approximations, we suggest that the ideal way to determine a reasonable sample size is a simulation study \parencite{NestlerEtAl2015} which incorporates as much prior knowledge about plausible effect sizes as possible. We provide an example of such a power simulation in the code examples, but note that this requires to fully specify an assumed population model with all (co)variances and path coefficients.
+\added{
+Planning for appropriate sample sizes is a necessary step to draw strong inferences from a data set. Doing a power analysis for models with multiple predictors and correlated outcomes, however, is not trivial, as it requires to define a priori several (co)variance components and multiple effect sizes which themselves depend on the reliability of the measured variables and their higher terms, many of which might be hard to estimate.\footnote{See \url{https://robert-a-ackerman.shinyapps.io/APIMPowerRdis/} for an online app that assists in doing power analyses for APIMs \parencite{Ackerman_Kenny_2016}.} An in-depth treatment of this topic is beyond the scope of this paper, but we want to outline some rules of thumb. A general recommendation for higher order terms provided by \textcite{Aiken_West_1991} is to assess 2-3 times as many participants as one would need to detect linear effects of the predictors. Another possibility for reducing complexity would be to collapse multiple parameter estimates into a single index of effect size, namely the increase in explained variance $\Delta R^2$ of 5\%. This could relate, for example, to the increase in explained variance that a congruence effect (i.e., a negative $a_4$) explains beyond the two main effects. For example, to detect a $\Delta R^2$ of 5\% with a statistical power of 90\% ($\alpha$ = 5\%) in a non-dyadic RSA, around 200 participants are needed if a single parameter, such as $a_4$ in a squared difference model, explains the additional variance. The impact of the dyadic nature of the data depends on the intra-class-correlation of the outcome variable, where the effective sample size is somewhere between the number of individuals and the number of dyads. If actor and partner effects can be constrained to be equal across roles, this effectively increases the sample size. Beyond these simple approximations, we suggest that the ideal way to determine a reasonable sample size is a simulation study \parencite{NestlerEtAl2015} which incorporates as much prior knowledge about plausible effect sizes as possible. We provide an example of such a power simulation in the code examples, but note that this requires to fully specify an assumed population model with all (co)variances and path coefficients.
 }
 
 \section{Example and R Code Walkthrough} 
@@ -482,7 +500,7 @@ b5f == b3m
 b4f == b4m
 \end{lstlisting}
 
-These constraints force the surface to be identical in shape for both genders, except for a different elevation (i.e., the intercept is free to vary between genders). A LR model comparison shows that the constrained model is significantly worse than the full model, $\chi^2$(5) = 34.2, \textit{p} < .001. The same conclusion can be drawn from a AIC difference of 24, also favoring the full model. Hence, we reject the constrained model and conclude that the joint impact of the personality predictors is different for each gender.
+\added{Note that these between-role constraints do not imply a couple-oriented model -- this would require to equate actor and partner effects within the male and the female surface.} These constraints force the surface to be identical in shape for both genders, except for a different elevation (i.e., the intercept is free to vary between genders). A LR model comparison shows that the constrained model is significantly worse than the full model, $\chi^2$(5) = 34.2, \textit{p} < .001. The same conclusion can be drawn from an \emph{AIC} difference of 24, also favoring the full model. Hence, we reject the constrained model and conclude that the joint impact of the personality predictors is different for each gender. 
 
 
 

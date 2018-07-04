@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section*.2}{Previous Approaches to Investigate Effects of Couple Similarity}{}% 1
+\BOOKMARK [1][-]{section*.3}{Dyadic RSA: A Marriage of RSA and APIM}{}% 2
+\BOOKMARK [2][-]{section*.4}{Response Surface Analysis}{section*.3}% 3
+\BOOKMARK [3][-]{section*.6}{The line of congruence}{section*.4}% 4
+\BOOKMARK [3][-]{section*.7}{The line of incongruence}{section*.4}% 5
+\BOOKMARK [3][-]{section*.9}{Commensurability and measurement invariance}{section*.4}% 6
+\BOOKMARK [3][-]{section*.10}{A prototypical similarity pattern}{section*.4}% 7
+\BOOKMARK [2][-]{section*.11}{The Actor-Partner-Interdependence Model}{section*.3}% 8
+\BOOKMARK [2][-]{section*.12}{Dyadic Response Surface Analysis}{section*.3}% 9
+\BOOKMARK [3][-]{section*.14}{Centering}{section*.12}% 10
+\BOOKMARK [3][-]{section*.15}{Constraining the Model}{section*.12}% 11
+\BOOKMARK [3][-]{section*.16}{Dyadic RSA for indistinguishable dyads}{section*.12}% 12
+\BOOKMARK [3][-]{section*.17}{Power analysis / Sample size planning}{section*.12}% 13
+\BOOKMARK [1][-]{section*.18}{Example and R Code Walkthrough}{}% 14
+\BOOKMARK [2][-]{section*.19}{Data Preparation}{section*.18}% 15
+\BOOKMARK [3][-]{section*.20}{Data format}{section*.19}% 16
+\BOOKMARK [3][-]{section*.23}{Missing values}{section*.19}% 17
+\BOOKMARK [3][-]{section*.24}{Amount of predictor discrepancy}{section*.19}% 18
+\BOOKMARK [3][-]{section*.25}{Outliers}{section*.19}% 19
+\BOOKMARK [3][-]{section*.26}{Higher terms computation}{section*.19}% 20
+\BOOKMARK [2][-]{section*.27}{Computing the Model in an SEM Framework}{section*.18}% 21
+\BOOKMARK [2][-]{section*.29}{Plotting the Model}{section*.18}% 22
+\BOOKMARK [2][-]{section*.31}{Applying Constraints}{section*.18}% 23
+\BOOKMARK [1][-]{section*.32}{Conclusion}{}% 24
+\BOOKMARK [1][-]{section*.34}{Appendix A}{}% 25
