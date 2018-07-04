@@ -1,0 +1,536 @@
+%\documentclass[jou,a4paper]{apa6}
+\documentclass[jou,a4paper,draftfirst]{apa6}
+%\documentclass[man,a4paper]{apa6}
+%\documentclass[man,a4paper,mask]{apa6}
+%\documentclass[doc,a4paper]{apa6}
+
+\usepackage[]{graphicx}
+\usepackage[]{color}
+
+\usepackage{alltt}
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}  	% for advanced math displays (e.g. definition of W in RSA)
+\usepackage{booktabs}	% booktables
+\usepackage{siunitx}		% align tables to decimal point: http://tex.stackexchange.com/questions/2746/aligning-numbers-by-decimal-points-in-table-columns
+
+
+% rotating: sidewaytables. Declare that also sidewaystables should be moved to the end of the document.
+\usepackage{rotating} 
+% Bei Journal-Mode muss man DeclareDelayedFloatFlavor wegkommentieren	
+% \DeclareDelayedFloatFlavor{sidewaystable}{table}
+% \DeclareDelayedFloatFlavor{sidewaysfigure}{figure}
+
+% With that package, tables are single spaced
+\usepackage{setspace}
+
+\usepackage{listings}  % for inline code blocks
+\lstset{
+	basicstyle=\footnotesize\ttfamily, % the size of the fonts that are used for the code
+	breaklines=true,  % sets automatic line breaking
+	breakatwhitespace=true, % sets if automatic breaks should only happen at whitespace
+	literate={ö}{{\"o}}1 % allow ö in Schönbrodt
+}
+
+
+\usepackage{url}	% links to headings
+\usepackage{placeins} 	% flushes Figures before the next section starts
+% use command \FloatBarrier
+
+
+%% APA-style citations
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,hyperref=true,giveninits,uniquename=init]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{combined.bib}
+
+% remove unwanted from .bib-file
+\AtEveryBibitem{	
+  \clearfield{day}
+  \clearfield{month}
+  \clearfield{labelday}
+  \clearfield{labelmonth}
+  \clearfield{number}
+}
+
+% Make specific adjustments to the Zotero-exported .bib-file
+% The nested curly braces fuck up texCount (word count), so ignore it.
+%TC:ignore
+\DeclareSourcemap{ 
+    \maps[datatype=bibtex]{
+      \map{
+	  % upper case after colon and ?
+           \step[fieldsource=title,
+                 match=\regexp{([:\?].?\s)(\w)},
+                 replace=\regexp{$1\{\u$2\}}]
+   	  % upper case after colon: Book titles
+              \step[fieldsource=booktitle,
+                    match=\regexp{(:.?\s)(\w)},
+                    replace=\regexp{$1\{\u$2\}}]
+	  % upper case for "R"
+	         \step[fieldsource=title,
+	               match=\regexp{(\s)R([\s\.:!?,])},
+	               replace=\regexp{$1\{R\}$2}]
+ 	%  Hand coded {}'s from Zotero
+     	         \step[fieldsource=title,
+     	               match=\regexp{\\\{},
+     	               replace=\regexp{\{}]
+	        \step[fieldsource=title,
+	              match=\regexp{\\\}},
+	              replace=\regexp{\}}]   
+     	         \step[fieldsource=author,
+     	               match=\regexp{(Task\sForce\son\sStatistical\sInference)},
+     	               replace=\regexp{\{$1\}}]
+         \step[fieldsource=author,
+           match=\regexp{(R\sCore\sTeam)},
+           replace=\regexp{\{$1\}}]
+       }
+    }
+}
+%TC:endignore
+
+\usepackage{hyperref} % should be loaded last as it redefines many Latex commands
+\hypersetup{colorlinks, urlcolor=blue, citecolor=blue}
+
+% To Do Notes
+\usepackage[colorinlistoftodos, textsize=footnotesize]{todonotes}
+% ... by F.S. (yellow)
+\newcommand{\fs}[1]{\todo[color=yellow!20]{FS: \ #1}} % on page margin
+\newcommand{\fsi}[1]{\todo[inline,color=yellow!20]{FS: \ #1}} % inline
+% ... by S.N. (blue)
+\newcommand{\sn}[1]{\todo[color=blue!20]{SN: \ #1}} % on page margin
+\newcommand{\sni}[1]{\todo[inline,color=blue!20]{SN: \ #1}} % inline
+% ... by S.H. (green)
+\newcommand{\sh}[1]{\todo[color=green!20]{SH: \ #1}} % on page margin
+\newcommand{\shi}[1]{\todo[inline,color=green!20]{SH: \ #1}}  % inline
+
+
+%========================================================================
+%-----  Here starts the actual paper --------------------
+%========================================================================
+
+\title{Testing similarity effects with dyadic response surface analysis}
+\shorttitle{Dyadic response surface analysis}
+
+\threeauthors{Felix D. Schönbrodt}{Sarah Humberg}{Steffen Nestler}
+\leftheader{Schönbrodt, Humberg, Nestler}
+\threeaffiliations{Ludwig-Maximilians-University, Munich}{Münster University}{Leipzig University}
+\date{\today}
+
+
+\authornote{
+Felix D. Schönbrodt, Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Sarah Humberg, Westf\"alische Wilhelms-University M\"unster. Steffen Nestler, Institute of Psychology, University of Leipzig, Germany.
+We embrace the values of openness and transparency in science (\url{http://www.researchtransparency.org/}). We therefore publish all data necessary to reproduce the reported results and provide reproducible scripts for all data analyses reported in this paper (\url{https://osf.io/ftsrd/}). 
+
+Acknowledgements. 
+We want to thank Caroline Zygar for helpful comments.
+Correspondence concerning this article should be addressed to Felix Schönbrodt, Leopoldstr. 13, 80802 München, Germany. Email: \href{mailto:felix@nicebread.de}{felix@nicebread.de}. Phone: +49 89 2180 5050.
+}
+
+
+% Abstract: 250 words max, up to 5 keywords
+\abstract{Dyadic similarity effect hypotheses state that the (dis)similarity between dyad members (e.g., the similarity on a personality dimension) is related to a dyadic outcome variable (e.g., the relationship satisfaction of both partners). Typically, these hypotheses have been investigated by using difference scores or other profile similarity indices as predictors of the outcome variables. These approaches, however, have been vigorously criticized for their conceptual and statistical shortcomings. Here, we introduce a statistical method that is based on polynomial regression and addresses most of these shortcomings: Dyadic response surface analysis (DRSA). This model is tailored for similarity effect hypotheses and fully accounts for the dyadic nature of relationship data. Furthermore, we provide a tutorial with an illustrative example and reproducible R and Mplus scripts that should assist substantive researchers in precisely formulating, testing, and interpreting their dyadic similarity effect hypotheses.
+%\todo[inline,color=blue!20!white]{Unpublished manuscript, draft version 0.1, 2017-06-02.}
+}
+
+\keywords{congruence, similarity, dyadic data, response surface analysis, polynomial regression}
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\begin{document}
+\maketitle	%First line of text directly after \maketitle (no blank line)
+A number of interesting psychological research questions in dyadic contexts refer to the effects of the dyad members’ similarity on some outcome. For example, how is the similarity between the husband's and wife’s personality associated with other variables such as the relationship satisfaction of each of them \parencite[e.g.,][]{DyrenforthEtAl2010}? Similarly, what is the correspondence between a supervisor’s and a subordinate’s personality and is this correspondence related to more positive performance outcomes \parencite[e.g.,][]{Strauss2001}? 
+
+We will refer to hypotheses of this kind as dyadic \textit{similarity effect hypotheses}; they state that the similarity (or congruence, or discrepancy) between two predictor variables are related to two outcome variables stemming from the same dyad members. Hence, we do not focus on the question whether or how similar dyad members are in absolute terms, but rather on the effect of different levels of similarity (on a continuous scale) on a third variable. To test such dyadic similarity effect hypotheses, researchers need to assess dyadic data that is interdependent. For the relationship satisfaction example, such data could include the husband's and the wife's personality assessments for each couple, as well as each of their relationship satisfaction scores, which will most likely be highly related.
+
+Most previous research on dyadic similarity effects computed discrepancy scores or profile similarity indices to measure the correspondence between the scores provided by two dyad members. The resulting similarity scores were then used as predictor variables in statistical models such as multiple regression, analysis of variance, or multilevel modeling. However, the usage of the similarity scores is statistically highly problematic due to untested constraints \parencite[e.g.,][]{Edwards2001}. We therefore introduce dyadic response surface analysis (DRSA) as an alternative mean to examine dyadic similarity effects (see \nptextcite{NestlerEtAl2015} for briefly mentioning this method, and \nptextcite{Weidmann_2017}, for an existing application of DRSA).
+
+DRSA offers a number of advantages compared to similarity-score based approaches. 
+First and foremost, as described below, DRSA circumvents most of the problems associated with the analysis of similarity indices. Second, DRSA allows a researcher to test whether the similarity effects are the same for both partners. This is less straightforward when a researcher uses a similarity-score based approach. Finally, DRSA can be employed when the outcome variables were measured on a continuous or on a categorical (e.g., binary) scale.
+
+This article is organized as follows: We will first briefly discuss some previous approaches that have been used to examine dyadic similarity effects and point out their problems and limitations. We will then shortly introduce classical RSA as well as the Actor-Partner-Interdependence Model (APIM; \nptextcite{kenny_dyadic_2006}), and then integrate these two methods to introduce DRSA. Finally, we will use an empirical example to illustrate the suggested method and give practical advice and code examples on how to compute the model in the \emph{R} environment for statistical computing \parencite{r_core_team_r:_2014}.
+
+Throughout this article, we focus on the case of distinguishable dyads. That is, we consider dyads in which the dyad members can be differentiated from one another on the basis of a theoretically meaningful variable. We use the effect of couple personality similarity between male and female romantic partners on relationship outcomes as our exemplary research question. Gender thus serves as the distinguishing variable. This example can be easily transferred to all other kinds of distinguishable dyads, such as non-identical twins, mother-child dyads, or mentors and mentees. DRSA is also applicable for interchangeable dyads (i.e., no distinguishing variable exist) such as identical twins or homosexual dyads. We give instructions, references, and \textit{R} code examples that demonstrate how to adapt the model to indistinguishable dyads. 
+
+\section{Previous Approaches to Investigate Effects of Couple Similarity}
+Researchers used a variety of methods to examine the influence of couple similarity on third variables \parencite[see][for an overview]{kenny_dyadic_2006}. The bottom line of most of these approaches is to (1) compute a similarity score for each dyad and (2) relate the resulting similarity scores to the two interdependent outcome variables. A number of different indices have been used in the literature to quantify the correspondence between the dyad members' values, most of which can be divided into two types: discrepancy scores and profile correlation indices \parencite[see also][]{DyrenforthEtAl2010}.
+
+Discrepancy scores represent the difference between the two dyad members' values. A discrepancy score for a dyad is typically calculated by computing the absolute or squared difference between both members' scores on the respective variable (e.g., the difference of their agreeableness scores). Such discrepancy scores provide an index of how dissimilar the dyad members are, with smaller values of the score reflecting more similarity between the two dyad members. Although these discrepancy scores have a strong intuitive meaning, they are problematic when ones use them in subsequent statistical models \parencite{BlantonEtAl2006,Edwards2001,Johns1981,PeterEtAl1993}. The most serious problem is that they impose implicit constraints on the data which are typically not tested. For example, usage of discrepancy scores presumes that (dis)similarity on a higher level (e.g., 9 - 8 = 1) is psychologically equivalent to (dis)similarity on a lower level (e.g., 2 - 1 = 1) and that these discrepancy scores result in the same psychological consequences. In the worst case, such untested constraints may lead researchers to accept their similarity hypothesis although there are in fact no similarity effects present in the data. This is equally true for related approaches that predicted the outcome variables from discrepancy scores, while statistically controlling for linear main effects of the predictor variables, for dyad averages of the predictors, or for interaction effects of dyad averages and the discrepancy scores. Such approaches loosen some, but not all implicit constraints, and are therefore still biased towards falsely accepting the similarity hypothesis \parencite[see also][]{Edwards2001}.
+
+The second type of similarity measures, profile similarity indices, focus on the correspondence in the rank-ordering of different assessed variables across dyad members (e.g., the couples' similarity in their Big Five profiles). This similarity is determined by computing (a) the Pearson product-moment correlation or (b) the intraclass-correlation between the scores of the two dyad members. By capturing the similarity in the dyads members' idiosyncratic ordering of measures relative to each other, higher values in profile similarity indices indicate greater correspondence. Although frequently used, application of profile correlations in this context is seen as problematic for several reasons. First, the psychological meaning of profile correlation coefficients is less clear than the interpretation of discrepancy scores, because profile correlations do not only capture profile similarity but, for example, also level effects \parencite[see][]{kenny_dyadic_2006}. Furthermore, when both dyad members tend to respond in a standard or normative fashion, the amount of similarity is over-estimated  \parencite{Cronbach1955,CronbachGleser1953, KennyAcitelli1994}. Finally, and unrelated to whether one controls for level effects or not, profile similarity indices also impose equality constraints when one uses them in subsequent statistical models as they also involve sums of squared differences \parencite{EdwardsParry1993}.
+
+Researchers usually combined one of the above described approaches with some strategy to take the nested structure of couple data into account, for example by accounting for within-dyad dependencies in separate predictions of female and male outcome variables, or by applying a multilevel framework. While such strategies are surely necessary when working with dyadic data, they cannot prevent from the limitations that are inherent in every approach that relates discrepancy or profile similarity scores to outcome variables. Implicit, untested constraints occur in these models, independent of whether and how one accounts for the dyadic data structure. 
+
+To summarize, typical previous approaches contained untested constraints that can lead researchers to falsely accepting a similarity hypothesis, or to missing important effects which cannot be detected due to the constraints. Before closing we would like to note that the amount of nonindependence in a dyadic sample is sometimes interpreted as the dissimilarity (or conversely the similarity) of the scores from the dyads (see \nptextcite{kenny_dyadic_2006}). Here, we are not interested in this type of similarity but rather in whether the within-dyad correspondence has an effect on an outcome variable. We are thus interested in similarity effects (sometimes called dyadic index effects, see \nptextcite{kenny_dyadic_2006}) and which mathematical model should ideally be used for their investigation.
+
+
+\section{Dyadic RSA: A Marriage of RSA and APIM}
+Dyadic response surface analysis is based on a combination of response surface analysis (RSA) and the Actor-Partner-Interdependence Model (APIM). In the following, we first describe RSA and then go on with the APIM. Thereafter, the DRSA is introduced. 
+
+\subsection{Response Surface Analysis}
+
+Similarity effect hypotheses have not only been posited for dyadic outcomes (e.g., the effect of couples' similarity in agreeableness on \emph{both} partners' relationship satisfaction) but also for individual or between-dyad outcomes. Such a similarity effect hypothesis could be ``the more similar a woman's openness $X$ is to her husband's openness $Y$, the higher is a couple's amount of time $Z$ they spend together''. RSA is the appropriate statistical tool to investigate such similarity effects on a single outcome \parencite[e.g., see][]{edwards_alternatives_2002,edwards_relationship_2007,HumbergRSA, schonbrodt_testing_2015}. 
+
+The basic element of an RSA is the estimation of a second-order polynomial regression model:
+
+\begin{equation} 
+\label{eq:full}
+Z = b_0 + b_1 X + b_2 Y + b_3 X^2 + b_4 X Y + b_5 Y^2 + e
+\end{equation}
+
+where the outcome variable $Z$ is regressed on the predictors $X$ and $Y$, their respective squared terms $X^2$ and $Y^2$, and their interaction $XY$. Note that only including the multiplicative interaction term is not sufficient to model a similarity effect (see \nptextcite{Edwards2001}, p. 269).
+
+The key idea behind RSA is a visualization of the estimated regression equation \eqref{eq:full} in a three-dimensional plot. An example response surface is shown in Figure~\ref{fig:sqd}: The two predictor variables $X$ and $Y$ are located on the two axes that span the bottom of the coordinate cube. For each combination of $X$ and $Y$, the respective model-predicted $Z$ value is reflected on the vertical axis, thus indicated by the height of the surface. For example, given the $(X,Y)$ coordinate $(0,-1)$ (e.g., a dyad in which the female has an openness score of 0 and the male has an openness score of -1), which is depicted as a circle on the bottom of the cube, the surface in Figure~\ref{fig:sqd} predicts the outcome value $Z = 3.75$, which is symbolized as a star on the regression surface.
+
+\begin{figure}[ht!]
+\centering
+\fitfigure{plots/Fig1_edited.pdf}
+\caption{A prototypical similarity effect: Response surface of the estimated regression equation $Z = 4 + 0X + 0Y - 0.25X^2 + 0.5XY - 0.25Y^2$. The circle on the cube's bottom is the position of a dyad's predictor variables (female:0, male: -1), the star is the corresponding predicted variable of the outcome variable on the response surface. Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
+\label{fig:sqd}
+\end{figure}
+
+RSA provides tools for a graphical and statistical interpretation of the regression surface, for example with regard to the (non-)existence of similarity effects. 
+
+\subsubsection{The line of congruence}
+For similarity effect hypotheses, an important feature of response surface plots is the \textit{line of congruence} \parencite[LOC,][]{edwards_relationship_2007}. Perfect congruence of two variables is not reflected in a single combination of matching $X$ and $Y$ values, but in all combinations for which $X$ equals $Y$. Hence, partners can be similar on a low level (e.g., both are low on openness), on a mid level, or on a high level (both are very open). All possible combinations of perfect similarity are located on the line of congruence on the bottom of the coordinate cube (see Figure~\ref{fig:sqd}), which diagonally connects the front corner (the congruent low/low combination) to the back corner (the congruent high/high combination) of the cube.
+
+The surface above the LOC is depicted as a respective black line on the surface, which reflects how the predicted outcome behaves for varying values of $X = Y$. Statistically, the surface above the LOC is described by the formula $Z = a_1X + a_2X^2$ (omitting the intercept). The newly introduced parameters $a_1$ and $a_2$ are derived from the estimated regression coefficients of equation~\eqref{eq:full}, where $a_1 = b_1 + b_2$, and $a_2 = b_3 + b_4 + b_5$ \parencite{shanock_polynomial_2010}. The parameter $a_2$ thus indicates whether the LOC is of a linear (if $a_2 = 0$) or of a curvilinear shape (if $a_2 \neq 0$), and $a_1$ describes the slope of the LOC above the point $(0,0)$. In Figures~\ref{fig:sqd}, \ref{fig:multipleRSA}A, and \ref{fig:multipleRSA}B, $a_2$ equals zero, meaning that the LOC is a straight line. In this case, $a_1$ is simply the slope of the linear line. Because $a_1 = 0$ in Figure~\ref{fig:sqd}, the predicted outcome value above the LOC is constant. For an example with a linear and non-constant predicted outcome over the LOC, see Figure~\ref{fig:multipleRSA}A, which depicts a \textit{rising ridge surface}: The outcome is higher when $X$ is identical to $Y$. Additionally to this basic similarity pattern there is an effect of the \textit{level} of similarity: Congruent combinations on a high predictor level lead to higher outcome values than congruent combinations on a low predictor level. Figures~\ref{fig:multipleRSA}D, \ref{fig:multipleRSA}E, and \ref{fig:multipleRSA}F, by contrast, depict surfaces with a curvilinear LOC. In Figure~\ref{fig:multipleRSA}D, for example, the outcome is highest for specific combination of female and male openness (namely $X = 0$ and $Y = 0$), and it is lower for all other combinations of the two predictors.
+
+\subsubsection{The line of incongruence}
+Equally important for similarity hypotheses is the \emph{line of incongruence} \parencite[LOIC,][]{edwards_relationship_2007}, which is perpendicular to the LOC and specifically meaningful with regard to similarity effects. It consists of all combinations of the predictors for which $Y = -X$ holds. In Figure~\ref{fig:sqd}, this line is depicted as a black line on the bottom of the cube and on the surface, respectively, which connects the left corner and the right corner of the cube. It runs from one incongruent extreme (low X/high Y) to the other (high X/low Y).
+Analogously to the LOC, the LOIC is mathematically determined by a quadratic equation $Z = a_3X + a_4X^2$ (omitting the intercept), where $a_3 = b_1 - b_2$ and $a_4 = b_3 - b_4 + b_5$. Again, the coefficient of the quadratic term, $a_4$, indicates whether the LOIC on the surface is linear or curvilinear. In the case of Figure~\ref{fig:sqd}, $a_4$ is negative ($a_4 = -1$), indicating that the LOIC has an inverted U-shape: It has a highest point and symmetrically bends downwards at both sides of this point. In such a setting (i.e., when $a_4 \neq 0$) the coefficient $a_3$ reflects the position of the highest or lowest point of the LOIC. Here, $a_3 = 0$, which means that the highest point of the LOIC is positioned exactly above $(0,0)$: The LOIC is highest for $X = Y = 0$ and bends downwards for values of $X$ and $Y$ that more and more deviate from one another, either in the direction of $X > Y$ (towards the right corner of the cube) or in the direction of $X < Y$ (towards the left corner). Figure~\ref{fig:multipleRSA}B depicts an exemplary surface with an inverted U-shape on the LOIC (i.e., $a_4 < 0$) for which the ridge is shifted away from the LOC ($a_3 \neq 0$): Here the outcome is maximal when $Y$ is larger than $X$ by a certain amount (``optimal margin model'', e.g. \nptextcite{Baumeister_1989}).
+
+\begin{figure*}[ht!]
+\centering
+\fitfigure{plots/RSA-multiples.pdf}
+\caption{Multiple examples of RSA configurations. Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
+\label{fig:multipleRSA}
+\end{figure*}
+
+\subsubsection{Commensurability and measurement invariance}
+The LOC refers to the numerical congruence of the predictor scales, and moving along the LOIC corresponds to increasing numerical differences in the one or the other direction. This numerical comparison only makes sense if both variables have been measured on the same scale. Just as it is a meaningless question whether 10 kilogram are larger than 8 meter, it does not make sense to do numerical comparisons on psychological constructs which have not been measured on the same scale. 
+
+When two measures are on the same scale they are \emph{commensurable} \parencite{edwards_relationship_2007}. Commensurability consist of two aspects, namely (a) nominal equivalence, which requires that both scales measure the same latent construct, and (b) scale equivalence, which requires that both scales have the same metric. These aspects are typically addressed by using the same measurement scales for both partners. This, however, is only a necessary but not a sufficient condition for commensurability. Even if the same operationalizations are used in subgroups (such as males and females), the relevant latent construct is not necessarily equivalent. For example, subgroups might have a different understanding of the items, as has been extensively discussed in the literature on measurement invariance and differential item functioning (for an overview, see \nptextcite{Meredith_2006}). Meaningful numerical group comparisons require \emph{strict measurement invariance}, which is established by an invariance of factor structure, factor loadings, item means, and residual variances. Only under these conditions comparative statement such as `larger', `smaller', or `equal' are meaningful. Consequently, for the investigation of similarity hypotheses in dyads, researchers should ensure strict measurement equivalence across genders. Comparisons of \textit{incommensurable} measures require special treatment and have to be interpreted with extreme caution \parencite{schonbrodt_testing_2015}.
+
+\subsubsection{A prototypical similarity pattern}
+In sum, the example surface in Figure~\ref{fig:sqd} reflects a prototypical similarity effect of a female and male personality dimension on a single outcome variable. A couple’s amount of time spent together is highest when the predictor combinations of the partners are identical. Furthermore, all levels of similarity are equally beneficial, and increasing dissimilarity leads to decreasing time spent together. Both directions of dissimilarity are equally detrimental. The statistical counterparts of this verbal description are $a_2 = 0$ (the surface is not curved above the LOC), $a_1 = 0$ (the predicted outcome above the LOC is constant, i.e., the ridge is flat; all levels of congruence are equally beneficial), $a_4 < 0$ (surface above the LOIC is curvilinear with an inverted U-shape), and $a_3 = 0$ (highest point of LOIC is above the LOC). 
+
+Finally, a similarity effect requires that the ridge line of the surface is positioned exactly on the LOC, as in Figure~\ref{fig:sqd}. This property is reflected in an additional condition $a_5 = b_3 - b_5 = 0$ (ridge line equals the LOC; see Appendix~A for details on this condition). The $R$ package $RSA$ \parencite{schonbrodt_rsa:_2016}, which we will use later in the tutorial section, provides point estimates, confidence intervals, and significance tests for all surface parameters.
+
+Note that Figure~\ref{fig:sqd} provides only one possible shape of a regression surface. Figure~\ref{fig:multipleRSA} shows some further surfaces, corresponding to different estimates of the coefficients in Equation~\ref{eq:full}. Response surfaces can have some typical shapes. For example, the surface in Figure~\ref{fig:multipleRSA}A is linear above the LOC ($a_2=0$), but it differs from Figure~\ref{fig:sqd} in that the surface rises above the LOC. This is indicated by a positive parameter $a_1 > 0$. One of the many advantages of RSA is that it enables to detect such rising ridge effects.
+Other typical shapes include a bowl (e.g., Figure~\ref{fig:multipleRSA}E), a dome (e.g., Figure~\ref{fig:multipleRSA}D), or a saddle (e.g., Figure~\ref{fig:multipleRSA}F).
+
+In sum, RSA is an appropriate tool to test hypotheses which posit that the similarity of two predictor variables should explain variance in a single outcome variable.
+RSA is gaining momentum as a tool in the personality literature. For example, recent publications investigated the effects of personality similarity on romantic attraction at zero acquaintance \parencite{olderbak_predicting_2017}, relationship intensity in a network analysis \parencite{ilmarinen_homophilous_2017}, effects of parent–offspring personality similarity on externalizing problems \parencite{franken_using_2017}, or person–group dissimilarity in personality on peer victimization \parencite{boele_persongroup_2017} and self-esteem \parencite{Bleidorn_2016}. Detailed overviews of further potential applications of RSA can be found in Table~1 in \textcite{Barranti__2017} and in Table~1 in \textcite{HumbergRSA}.
+
+However, in the dyadic setting, we aim at predicting \emph{two} interdependent outcome variables (e.g., female and male relationship satisfaction) from dyad similarity. We therefore need to extend RSA to the dyadic case. The core idea which we will use to achieve such an extension comes from the Actor-Partner-Interdependence Model (APIM). The APIM allows to model linear main effects of two predictors on two interdependent outcome variables. After a short introduction to the APIM, we will combine its reasoning with RSA, resulting in a tool to model similarity effects on the two dyadic outcome variables.
+
+\subsection{The Actor-Partner-Interdependence Model}
+Early treatments of dyadic data sometimes circumvented the interdependence of dyadic data by computing separate models for the dyad members (e.g., for women and for men). However, a more suitable approach is to simultaneously estimate the two models in a joint model, as it allows, for example, to directly test for gender differences \parencite{kenny_dyadic_2006}. The model contains two dyad members (e.g., women and men) and two variables (e.g., a personality trait such as agreeableness and an outcome such as relationship satisfaction). By convention, the focal person is called ‘actor’ and the other person in the dyad is called ‘partner’. The basic idea of the APIM is that an actor's dependent variable is not only a function of his or her own characteristics, but also a function of the characteristics of the partner. In that way the APIM captures one key aspect of social relationships: the interdependency of partners.
+
+From a statistical perspective, the APIM is a multivariate regression model \parencite[cf.][]{kenny_dyadic_2006,NestlerEtAl2015} in which the outcome variable of the actors and of the partners (e.g., relationship satisfaction of women and men) is regressed on the predictor variable of both partners (e.g., women's and men's personality traits):
+
+\begin{equation}
+\label{al:apim}
+\begin{split}
+Z_{f} &= b_{0f} + b_{1f} X + b_{2f} Y + e_{f} \\
+Z_{m} &= b_{0m} + b_{1m} X + b_{2m} Y + e_{m} \\
+e_f &\sim\sim e_m
+\end{split}
+\end{equation}
+
+where $Z_f$ and $Z_m$ denote the outcome variable of women (‘f’) and men (‘m’), $X$ refers to the female predictor, and $Y$ to the male predictor.\footnote{Here we deviate from the typical APIM notation that uses $Y_f$ and $Y_m$ for the dependent variables and $X_f$ and $X_m$ for the predictor variables. We changed the notation to achieve continuity to the dyadic RSA extension explained below.} The coefficients $b_{1f}$ and $b_{2m}$ are called \textit{actor effects}: They describe the influence of a dyad member’s predictor (e.g., agreeableness) on her or his own outcome variable (e.g., relationship satisfaction). Actor effects thus indicate intrapersonal effects. The coefficients $b_{2f}$ and $b_{1m}$ are the \textit{partner effects}. They measure the influence that the dyad member’s predictor has on the other member’s outcome. They thus reflect interpersonal effects. In the example, the partner effect describes the effect of the man’s (or the woman’s) agreeableness on the woman’s (or the man’s) relationship satisfaction. Finally, the residual scores of the two outcome variables are allowed to be correlated ($e_f \sim\sim e_m$) to account for dependence in the dyadic data that is not explained by the modeled predictor variables.
+
+The goal of employing the APIM is to estimate the magnitude of the actor and partner effects. In case of distinguishable dyads, researchers can use structural equation modeling (SEM) software for this purpose \parencite{kenny_dyadic_2006}, as the standard APIM is mathematically equivalent to a cross-lag path model with two time-points \parencite{NestlerEtAl2015}. 
+Alternatively, the APIM for distinguishable dyads can also be estimated using a double-intercept multilevel model \parencite{kenny_dyadic_2006}. In the case of indistinguishable dyads, again both multilevel modeling software or SEM software can be used \parencite[see][]{kenny_dyadic_2006,olsen_structural_2006}. One important advantage of the SEM approach is that such software allows defining constraints on the model parameters. Such constraints can be used to examine APIM patterns, such as the actor-only pattern (see below). This is important insofar as each APIM pattern suggests a very different process occurring in the dyadic relationship \parencite[see][]{KennyLedermann2010}. Therefore, we focus on the SEM framework to estimate the dyadic RSA model which we propose below.
+
+
+\subsection{Dyadic Response Surface Analysis}
+
+We shortly reflected on two statistical approaches here: RSA enables to test similarity effects of two predictors on a single outcome variable. APIM allows to test simple main effects of two predictors on two interdependent (dyadic) outcome variables. It is now straightforward to combine these two approaches to obtain a method to test similarity effects on two interdependent outcomes \parencite{NestlerEtAl2015}.
+
+Formally, the DRSA is defined by two polynomial regressions, where the same pair of predictor variables (and their higher terms) predict the male and the female outcome variable. To be consistent with previous literature on RSA, we use $X$, $Y$, and $Z$ as variable names. $X$ denotes the female predictor variable, $Y$ the male predictor variable, $Z_f$ and $Z_m$ the female and male outcome variables, respectively. The error terms $e_f$ and $e_m$ are correlated to account for the non-independence of the dyadic data structure:
+
+\begin{equation} 
+\label{eq:dyadic}
+\begin{split}
+Z_f &= b_{0f} + b_{1f} X + b_{2f} Y + b_{3f} X^2 + b_{4f} X Y + b_{5f} Y^2 + e_f\\
+Z_m &= b_{0m} + b_{1m} X + b_{2m} Y + b_{3m} X^2 + b_{4m} X Y + b_{5m} Y^2 + e_m\\
+e_f &\sim\sim e_m
+\end{split}
+\end{equation}
+
+Within this model, one distinguishes actor effects and partner effects, depending on whether a regression path connects a predictor and an outcome variable belonging to one person (actor effects) or whether it connects a predictor of one person to the outcome variable of the other persons (partner effects; see also Figure~\ref{fig:DRSA}). Hence, $b_{1f}$, $b_{3f}$, $b_{2m}$, and $b_{5m}$ are actor effects, and $b_{2f}$, $b_{5f}$, $b_{1m}$, and $b_{3m}$ are partner effects. Furthermore, the terms $b_{4f}$ and $b_{4m}$ are statistical actor-partner-interactions, as they combine information both from the actor and from the partner\footnote{Note that the multiplicative interaction is only one of several possible operationalizations of actor-partner-interactions \parencite{kenny_partner_1999}.}.
+
+\begin{figure*}[ht!]
+\centering
+\fitfigure{plots/Dyadic_RSA.pdf}
+\caption{The dyadic RSA path model. Black solid paths are actor effects, dashed paths are partner effects, and the dotted paths are statistical partner interactions. Intercepts are not displayed. Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
+\label{fig:DRSA}
+\end{figure*}
+
+As two outcome variables are modeled, also two different response surfaces can be plotted, using $b_{0f}$ to $b_{5f}$ for the female surface and $b_{0m}$ to $b_{5m}$ for the male surface. Likewise, the surface parameters for LOC and LOIC can be computed both for the female and the male surface. The female surface parameters are defined as:
+
+\begin{equation} 
+\label{eq:female_SP}
+\begin{split}
+a_{1f} &= b_{1f} + b_{2f}\\
+a_{2f} &= b_{3f} + b_{4f} + b_{5f}\\
+a_{3f} &= b_{1f} - b_{2f}\\
+a_{4f} &= b_{3f} - b_{4f} + b_{5f}\\
+a_{5f} &= b_{3f} - b_{5f}
+\end{split}
+\end{equation}
+
+The male surface parameters are similarly defined, only using the coefficients with the `m' subscript.
+
+\subsubsection{Centering}
+When higher terms are present in a regression model, such as the interaction term or the squared terms in a polynomial regression, it is advisable to center the predictor variables such that they obtain a meaningful zero point. This enhances the interpretability of the linear main effects ($b_{1f}$, $b_{1m}$, $b_{2f}$, and $b_{2m}$) and of the surface parameters that reflect the slope of the LOC or the LOIC above $(0,0)$ ($a_{1f}$, $a_{1m}$, $a_{3f}$, and $a_{3m}$).
+
+In DRSA, it is furthermore essential to center both partners' predictor variables so that they have a common zero point \parencite{kenny_partner_1999,kenny_dyadic_2006}. This can for example be achieved by subtracting the midpoint of the response scale (e.g., 4 on a 1--7 scale ranging from \textit{Strongly Disagree [1]} -- \textit{Undecided [4]} -- \textit{Strongly Agree [7]}) from $X$ and $Y$. This is often appropriate when the midpoint of the scale is semantically meaningful.
+If the response scale has no meaningful midpoint, it is also possible to center $X$ and $Y$ to the mean of the variables computed across both genders. If one wants to additionally standardize the two predictor variables, this should be also done by use of the common standard deviation across both genders. 
+
+This kind of common centering across genders is necessary for two reasons. First, commensurability would be lost when females and males were centered or standardized within their groups. With incommensurable scales, the LOC and the LOIC are no longer interpretable. Second, a common scale is necessary to make comparisons of the effect sizes between genders. Note that, although it might seem like a valid alternative at first sight, one cannot center $X$ and $Y$ within dyads, because this would force a couple’s predictors onto the same absolute value and make them perfectly collinear.
+
+\subsubsection{Constraining the Model}
+In a full DRSA model, 10 directed path coefficients are estimated (along with the (co)variances), which can be quite a large number depending on the sample size. Both for parsimony and for testing substantive theoretical predictions, constraints can be applied that simplify the full model.
+
+\emph{Constraining path coefficients.}
+Path coefficients can be constrained based on multiple principles. From a dyadic data analysis point of view, one can test whether some path coefficients do (not) differ from zero, and whether some path coefficients are equal for both genders. \textcite{kenny_partner_1999} distinguish several patterns of actor effects and partner effects which reflect meaningful psychological phenomena:
+
+\begin{description}
+	\item[actor-oriented:] actor effects $\neq 0$, partner effects $= 0$
+	\item[partner-oriented:] actor effects $= 0$, partner effects $\neq 0$
+	\item[couple-oriented:] actor effects = partner effects
+	\item[social comparison:] actor effects = $-$partner effects
+\end{description}
+
+Actor-oriented patterns assume that a person is only affected by his or her own predictor score, but not by the partner's predictor score. Partner-oriented patterns assume that a person's outcome is only affected by the partner's score, but not by his or her own score. A couple-oriented pattern implies that the sum (or the average) of the dyad's predictors determines the outcome. This means, that the own and the partner's standing are equally important for the outcome, and that own sufficiencies can be compensated by the partner. A social comparison pattern, in contrast, implies that the outcome increases when the \emph{difference} between the own and the partner's score increases.
+
+These classical APIM constraints only refer to the linear main effects. In the extended polynomial regressions of the DRSA, further constraints have to be defined for the higher order terms. For example, for a pure actor-oriented pattern, additionally all partner effects and the interaction terms should be zero, whereas the higher order actor effects could be unequal to zero.
+
+Additionally to the APIM constraints, one can also apply constraints typically used in RSA. For example, the prototypical similarity effects surface displayed in Figure~\ref{fig:sqd} implies several constraints on the regression coefficients, as it assumes that the surface has an inverted U-shape with the ridge being flat and lying exactly above the LOC (i.e., the outcome is maximized at perfect congruence and the level of congruence is irrelevant). In the non-dyadic case, these assumptions about the surface are achieved with the following constraints: (1) $b_1 = 0$, (2) $b_2 = 0$, (3) $b_3 = b_5$, and (4) $b_4 = -2 b_5$. This model is also called `squared difference model', as a simple squared difference as predictor implies these constraints \parencite{edwards_alternatives_2002,schonbrodt_testing_2015}. If theory implies that the outcome for both genders in a DRSA should follow a squared difference model, analogous constraints have to be applied: (1) $b_{1f} = b_{1m} = 0$, (2) $b_{2f} = b_{2m} = 0$, (3) $b_{3f} = b_{5f}$, (4) $b_{3m} = b_{5m}$, (5) $b_{4f} = -2 b_{5f}$, and (6) $b_{4m} = -2 b_{5m}$. If one furthermore assumes that the response surface is the same for both genders, the free coefficients have to be equated between genders: (1) $b_{1f} = b_{2f} = b_{1m} = b_{2m} = 0$, (2) $b_{3f} = b_{5f} = b_{3m} = b_{5m}$, and (3) $b_{4f} = b_{4m} = -2 b_{5f}$. Additional theoretically meaningful models, such as the rising ridge model, can be tested by applying respective other constraints to the regression coefficients \parencite{schonbrodt_testing_2015}.
+
+\emph{Nested and non-nested model comparison.}
+By constraining parameters, model complexity can be reduced compared to estimating every single coefficient in the model. A simpler model is said to be nested under a more complex model if the simpler model can be obtained from the complex model by adding parameter constraints. For example, the actor-oriented pattern is nested within the unconstrained APIM, as it can be defined by constraining all partner effects to be zero. 
+
+More complex models always yield a better fit to the data in terms of the amount of variance they can explain, but they contain the risk of overfitting to the data at hand. Complex models therefore threaten the goals of parsimony and generalizability to other data. Nested models can be compared via $\chi^2$ likelihood ratio (LR) tests. If a simpler model is not significantly worse, indicated by a non-significant \emph{p}-value in the LR test, the simpler model can be retained.
+ 
+Not all models, however, are nested. For example, the partner-oriented pattern is not nested under the actor-oriented pattern (or vice versa) -- there is no way to add constraints to the actor-oriented pattern to get to the partner-oriented pattern (in contrast, one would have to \textit{release} a constraint to allow non-zero partner effects). Consequently, the performance of actor-oriented and partner-oriented patterns cannot directly be compared to each other via LR tests. For the comparison of non-nested models, one can instead use information criteria. One of the most commonly used is the Akaike Information Criterion (AIC; for an overview see \nptextcite{burnham_model_2002}). Models with a relatively lower AIC value show a better fit to the data (the absolute value of AIC is irrelevant), and $\Delta \text{AIC}$ values $\geq$ 7 typically are seen as an indicator to prefer the model with the lower AIC. $\Delta \text{AICs}$ values $\leq$ 2, in contrast, indicate that both models are essentially equally good and the data at hand does not contain enough evidence to decide between both models \parencite{burnham_aic_2011,symonds_brief_2011}. $\Delta \text{AIC}$ values between 2 and 7 can be seen as some support for the better model, that is not decisive, however. Other information criteria beyond AIC are also available, such as BIC \parencite{Burnham_Anderson_2004}, or variations of the AIC (e.g., AICc or CAIC; for an overview and comparison, see \nptextcite{Dziak_2012,Garamszegi2011}).
+
+\emph{Why apply constraints?}
+There are several reasons for testing constraints on the full model. First, in an exploratory analysis, the patterns of APIM constraints and of the RSA constraints can be used to give post-hoc descriptions to the results of an analysis (e.g., ``The data follows a partner-oriented pattern''). Second, constrained models can be understood as confirmatory hypotheses. To test such a hypothesis, one would test the theoretically predicted model with constraints against an unconstrained model. If the constrained model is not significantly worse than the unconstrained model, it is retained as a more parsimonious model and the theory is corroborated. Finally, as a pragmatic reason to apply constraints, they also increase power. If men's and women's effects are not significantly different from each other, the respective paths can be set equal. These constraints effectively increase the sample size and the power to detect smaller effects. However, as always is the case with a non-rejected null hypothesis, a non-significant difference of paths on its own is no direct evidence of `no difference' \parencite[e.g.,][]{goodman_dirty_2008}, but should rather be interpreted as `not enough power to detect a potential difference', depending on the sample size and the smallest effect size of interest.
+
+\subsubsection{Dyadic RSA for indistinguishable dyads}
+{\color{blue}So far we focused only on noninterchangeable dyads, but the procedure can also be adapted to dyads that are naturally interchangeable, following the approach of \textcite{olsen_structural_2006}. Furthermore, even if dyads have a potentially distinguishing variable, such as gender, their means, variances, and covariances could be statistically indistinguishable. The omnibus SEM test for distinguishability tests for these equalities (see \nptextcite{gonzalez_correlational_1999}, and \nptextcite{kenny_dyadic_2006}, pp. 129-131).
+
+If dyads are naturally interchangeable, several constraints must be applied to the SEM \parencite{olsen_structural_2006}: Equal (linear and squared) actor effects, equal (linear and squared) partner effects, equal predictor means, equal predictor variances, equal outcome intercepts, and equal residual variances. The accompanying \textit{R} code contains an example how to set up such a model. In the remainder of the paper, however, we focus on distinguishable dyads.
+}
+
+
+\subsubsection{Power analysis / Sample size planning}
+{\color{blue}
+Planning for appropriate sample sizes is a necessary step to draw strong inferences from a data set. Doing a power analysis for models with multiple predictors and correlated outcomes, however, is not trivial, as it requires to define a priori several (co)variance components and multiple effect sizes which themselves depend on the reliability of the measured variables and their higher terms, many of which might be hard to estimate. An in-depth treatment of this topic is beyond the scope of this paper, but we want to outline some rules of thumb. A general recommendation for higher order terms provided by \textcite{Aiken_West_1991} is to assess 2-3 times as many participants as one would need to detect linear effects of the predictors. Another possibility for reducing complexity would be to collapse multiple parameter estimates into a single index of effect size, namely the increase in explained variance $\Delta R^2$ of 5\%. This could relate, for example, to the increase in explained variance that a congruence effect (i.e., a negative a₄) explains beyond the two main effects. For example, to detect a $\Delta R^2$ of 5\% with a statistical power of 90\% (α = 5\%) in a non-dyadic RSA, around 200 participants are needed if a single parameter, such as a₄ in a squared difference model, explains the additional variance. The impact of the dyadic nature of the data depends on the intra-class-correlation of the outcome variable, where the effective sample size is somewhere between the number of individuals and the number of dyads. If actor and partner effects can be constrained to be equal across roles, this effectively increases the sample size. Beyond these simple approximations, we suggest that the ideal way to determine a reasonable sample size is a simulation study \parencite{NestlerEtAl2015} which incorporates as much prior knowledge about plausible effect sizes as possible. We provide an example of such a power simulation in the code examples, but note that this requires to fully specify an assumed population model with all (co)variances and path coefficients.
+}
+
+\section{Example and R Code Walkthrough} 
+In the following sections, we will consider practical questions on how to conduct a DRSA in \textit{R} and demonstrate the usage with a concrete example. For a clearer demonstration, we will use simulated data. In the tradition of Raymond Cattell, we decided to give an artificial name to our hypothetical personality scale ("bavaria"), in order not to confuse readers about the purported implications of this simulated data set. The full code for reproducing the results and the figures can be downloaded from \url{https://osf.io/ftsrd/}.
+
+\subsection{Data Preparation}
+
+Before computing the model, several steps of data preparation should be done.
+
+\subsubsection{Data format}
+The SEM framework requires data to be stored in the wide format, so that each row contains data from one dyad and each measured variable has a separate column for each dyad member. This data format clarifies that the unit of analysis is the dyad, and that degrees of freedom usually refer to the number of dyads. Table~\ref{tab:demodata} shows an example of the required data structure.
+
+\begin{table}
+    \caption{The First Rows of a Demo Data Set in Wide Format.} 
+    \label{tab:demodata}
+  \begin{threeparttable}
+		\begin{tabular}{ccccc}
+		\toprule
+	% latex table generated in R 3.3.2 by xtable 1.8-2 package
+	% Mon Feb  6 17:24:26 2017
+	pairID & X & Y & Z\_f & Z\_m \\ 
+    \midrule
+	1 & 8 & 8 & 7 & 2 \\ 
+	  2 & 7 & 8 & 5 & 4 \\ 
+	  3 & 6 & 7 & 5 & 2 \\ 
+	  4 & 5 & 2 & 5 & 5 \\ 
+	  5 & 5 & 8 & 5 & 6 \\ 
+	  6 & 5 & 4 & 8 & 6 \\ 
+		\bottomrule 
+	\end{tabular}
+	\vspace{0.5em}
+	\begin{tablenotes}[para,flushleft]
+		\footnotesize
+		\textit{Note.} \emph{X} = female predictor variable, \emph{Y} = male predictor variable, \emph{Z\_f} = female outcome variable, \emph{Z\_m} = male outcome variable.
+		\end{tablenotes}
+		\vspace{0.5em}
+	\end{threeparttable}
+\end{table}
+
+\subsubsection{Missing values}
+Missing values are a potential source for bias and distorted standard errors. In the case of RSA, a single missing value in, $X$, for example, propagates further to missing values in $X^2$ and in $XY$. An in depth treatment of missing values is beyond the scope of this paper, but we mention that the `default' option of listwise deletion usually is not recommended. An often recommended technique is to use a maximum likelihood estimation based on all available data ("full information maximum likelihood", FIML). This estimation assumes that missing values are at least \emph{missing at random} ("MAR"; \nptextcite{schafer_missing_2002}), which means that the probabilities of missingness do not depend on the missing data. The question whether missing values are MAR or not, can typically not be tested but has to be assumed. However, \textcite{collins_comparison_2001} demonstrated that violations of the MAR assumption often only have minor impact on the estimation and standard errors. The \emph{lavaan} package which we recommend here is capable of a FIML estimation and we will apply this treatment of missing values in our example below.
+
+
+\subsubsection{Amount of predictor discrepancy}
+A potential challenge with couple data is that partner correlations of predictor variables are often high, leading to a bivariate range restriction where the incongruent quadrants are much less populated than the congruent quadrants. This leads both to a diminished power to detect discrepancy effects \parencite{McClelland_Judd_1993}, but also to a heightened susceptibility to extreme values, as few discrepant values can drive an apparent discrepancy effect. \textcite{shanock_polynomial_2010} suggest to compute a standardized discrepancy score of the predictor variables to determine the percentage of couples that can be considered discrepant. For this purpose, predictor scores are standardized within gender, and any absolute difference larger than 0.5 \textit{z}-points between male and female scores is considered a ``discrepant couple''. The {\tt RSA} function from the \textit{RSA} package automatically reports the percentage of discrepant units according to these criteria. If only very few couples are discrepant, it might be futile to assess the impact of dissimilarity on an outcome. 
+
+\subsubsection{Outliers}
+Regression results can be spurious if they are driven by a small number of outliers, and the squared terms of the polynomial regression even exaggerate the impact of outliers. Therefore, we recommend to screen the data set for multivariate outliers. Typical outlier detection is based on indices such as Cook's distance or leverage points \parencite[e.g.,][]{bollen_regression_1985}. The {\tt RSA} function from the \textit{RSA} package automatically checks for multivariate outliers according to these criteria (see also the example R script, where the data set is screened for outliers). A sensitivity analysis that explores the effect of excluding some of the most discrepant outliers can show whether an apparent similarity effect is robust, or whether it is only driven by a small number of extreme values.
+
+
+\subsubsection{Higher terms computation}
+As a final step, the higher terms for the polynomial regression have to be added to the data set. For that purpose, the centered predictors (referred to as $X.c$ and $Y.c$) have to be squared (referred to as $X.c2$ and $Y.c2$) and their multiplicative interaction has to be computed (referred to as $XY$)
+
+
+
+\subsection{Computing the Model in an SEM Framework}
+We compute the DRSA models with a path modeling approach using the \emph{lavaan} package \parencite{rosseel_lavaan:_2012-1} for the R statistical environment \parencite{r_core_team_r:_2014}. Note that the same model can also be estimated in a multilevel model, when the classical APIM model for distinguishable dyads \parencite{kenny_dyadic_2006} is extended by the multiplicative actor-partner interaction and the squared terms for the actor and the partner effect.\footnote{In the associated OSF project (\url{https://osf.io/ftsrd/}), we also provide Mplus scripts that do the same job. Furthermore, we provide example code how the same model can be estimated in a multilevel modeling framework.}
+
+
+In the \textit{lavaan} syntax, the model is defined as follows:
+
+\begin{lstlisting}
+dRSA.full.model <- "
+Z_f ~ b1f*X.c + b2f*Y.c + b3f*X.c2 + b4f*XY + b5f*Y.c2
+Z_m ~ b1m*X.c + b2m*Y.c + b3m*X.c2 + b4m*XY + b5m*Y.c2
+Z_m ~~ Z_f
+"
+\end{lstlisting}
+
+The `$\sim$' operator defines regression paths, the `$\sim\sim$' operator defines residual correlations. This model can be estimated using the \texttt{sem} function. The standard maximum likelihood estimator of SEM packages assumes a multivariate normal distribution of the endogenous variables. As the estimation of the standard errors and \textit{p}-values can be biased when this assumption is violated, we recommend to use a robust estimator (\texttt{estimator="MLR"}) for the model development stages, which yields less biased standard errors (\texttt{se="robust"}) with non-normal data. Furthermore, we request a FIML treatment of missing data:
+
+\begin{lstlisting}
+s.full <- sem(dRSA.full.model, data=df, meanstructure=TRUE, estimator="MLR", se="robust", missing="fiml")
+\end{lstlisting}
+
+For the final model, we recommend to compute bootstrapped standard errors and \textit{p}-values, with at least 5000 replications. This requires switching to the ML estimator:
+
+\begin{lstlisting}
+s.full.boot <- sem(dRSA.full.model, data=df, meanstructure=TRUE, estimator="ML", missing="fiml", se="boot", bootstrap=10000)
+\end{lstlisting}
+
+With the \texttt{summary(s.full.boot)} command the parameter estimates can be printed (see Table~\ref{tab:s.full.est}). The unconstrained DRSA model is a saturated model with zero degrees of freedom. Hence, no tests of model fit are possible.
+
+\begin{table*}
+	\caption{Regression Coefficients $b_1$ to $b_5$ and Derived Model Parameters for the DRSA Model, With Bootstrapped Standard Errors and \emph{p}-Values}
+	\label{tab:s.full.est}
+	\begin{tabular}{lScSS}   
+	\hline
+    
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% Fri Feb  3 08:08:21 2017
+ & {Estimate} & {95\% CI} & {Standard error} & {\emph{p} value} \\ 
+  \hline
+$b_{1f}$ & 0.298 & [0.21; 0.39] & 0.047 & 0.000 \\ 
+  $b_{2f}$ & -0.078 & [-0.17; 0.00] & 0.043 & 0.074 \\ 
+  $b_{3f}$ & -0.044 & [-0.08; -0.01] & 0.018 & 0.016 \\ 
+  $b_{4f}$ & 0.162 & [0.11; 0.21] & 0.026 & 0.000 \\ 
+  $b_{5f}$ & -0.088 & [-0.11; -0.06] & 0.015 & 0.000 \\ 
+  $b_{1m}$ & -0.321 & [-0.50; -0.14] & 0.092 & 0.000 \\ 
+  $b_{2m}$ & 0.481 & [0.30; 0.64] & 0.088 & 0.000 \\ 
+  $b_{3m}$ & 0.020 & [-0.05; 0.10] & 0.036 & 0.573 \\ 
+  $b_{4m}$ & 0.042 & [-0.05; 0.14] & 0.050 & 0.395 \\ 
+  $b_{5m}$ & -0.006 & [-0.06; 0.06] & 0.032 & 0.841 \\ 
+  $a_{1f}$ & 0.221 & [0.09; 0.34] & 0.063 & 0.000 \\ 
+  $a_{2f}$ & 0.029 & [-0.03; 0.10] & 0.033 & 0.380 \\ 
+  $a_{3f}$ & 0.376 & [0.26; 0.51] & 0.065 & 0.000 \\ 
+  $a_{4f}$ & -0.295 & [-0.37; -0.23] & 0.037 & 0.000 \\ 
+  $a_{5f}$ & 0.044 & [-0.00; 0.09] & 0.023 & 0.051 \\ 
+  $a_{1m}$ & 0.160 & [-0.10; 0.40] & 0.129 & 0.214 \\ 
+  $a_{2m}$ & 0.056 & [-0.07; 0.21] & 0.071 & 0.430 \\ 
+  $a_{3m}$ & -0.802 & [-1.03; -0.55] & 0.126 & 0.000 \\ 
+  $a_{4m}$ & -0.028 & [-0.16; 0.10] & 0.068 & 0.676 \\ 
+  $a_{5m}$ & 0.027 & [-0.07; 0.12] & 0.047 & 0.569 \\ 
+   \hline
+  
+    \end{tabular}
+\end{table*}
+   
+
+\subsection{Plotting the Model}
+The joint impact from the multitude of model parameters in Table~\ref{tab:s.full.est} on both partners' outcome variables can be difficult to interpret. Furthermore, we caution against the attempt to interpret single coefficients in isolation. For a more intuitive interpretation of the joint impact of all predictors we recommend to visualize the final models using the \emph{RSA} package (\nptextcite{schonbrodt_rsa:_2016}; see the online material for the code for the plots).\footnote{Surface plots can be also created (with limited graphical options and limited visual refinement) using Excel sheets, see for example \url{http://www.springer.com/cda/content/document/cda_downloaddocument/Excel+spreadsheet+for+response+surface+analysis.xls?SGWID=0-0-45-940137-p35536793}.} Figure~\ref{fig:dRSA_plot} shows a side-by-side comparison of the female and the male surface. The visualization of both partners' response surfaces illustrates that the (dis)similarity between partners can have different effects on the female and the male outcome. 
+
+In the current hypothetical example, females show an optimal margin pattern, where the highest female relationship satisfaction is expected when the female \emph{bavaria} is somewhat higher than the male \emph{bavaria}. This general pattern, however, includes a rising ridge, which means that optimal predictor combinations on a higher level are better than optimal combinations on lower levels. The male predicted relationship satisfaction, by contrast, is highest when the male partner is high in \emph{bavaria} while the female is low, medium when both are on similar levels, and lowest in the incongruent corner of high female/low male \emph{bavaria}.
+
+\begin{figure*}[ht!]
+\centering
+\fitfigure{plots/fig_dRSA.pdf}
+\caption{Female and male response surface from the DRSA. Raw data points are plotted at their predicted value (i.e., they are projected onto the response surface). Figure available at \url{https://osf.io/ftsrd/}, under a CC-BY4.0 license.}
+\label{fig:dRSA_plot}
+\end{figure*}
+
+Generally, extreme caution is necessary when the regression surface is extrapolated to regions without actual data points. As this extrapolation rests on very unlikely assumptions \parencite{montgomery_introduction_2012}, only regions of the surface within the range of the original data should be interpreted. To facilitate a valid interpretation, we strongly recommend to show the raw data imposed on the surface plot \parencite[see also][]{wilkinson_statistical_1999,tufte_visual_2001}. In Figure~\ref{fig:dRSA_plot}, a bagplot around the raw data points is shown to give a visual aid for the `interpretable region'. The bagplot is a bivariate extension of a boxplot \parencite{rousseeuw_bagplot:_1999}, which describes the position of the inner 50\% of points (within the inner polygon, called \emph{bag}) and the outer 50\% of points (within the outer polygon, called \emph{fence}).\footnote{In the gray scale plots the inner bag is hard to detect; the dark polygon is the fence that marks the bivariate range of the data.}
+
+\subsection{Applying Constraints}
+Furthermore, we wanted to check whether the model can be constrained in a way that allows to use an identical surface as an adequate model for both genders' outcomes. Therefore we applied the following constraints:
+
+\begin{lstlisting}
+# actor effect equality constraints
+b1f == b2m
+b3f == b5m
+
+# partner effect equality constraints
+b2f == b1m
+b5f == b3m
+
+# interaction effect equality constraint
+b4f == b4m
+\end{lstlisting}
+
+These constraints force the surface to be identical in shape for both genders, except for a different elevation (i.e., the intercept is free to vary between genders). A LR model comparison shows that the constrained model is significantly worse than the full model, $\chi^2$(5) = 34.2, \textit{p} < .001. The same conclusion can be drawn from a AIC difference of 24, also favoring the full model. Hence, we reject the constrained model and conclude that the joint impact of the personality predictors is different for each gender.
+
+
+
+\section{Conclusion}
+This paper presents a general framework for testing and interpreting similarity effect hypotheses in dyads. Based on previous work on polynomial regression and response surface analysis, we extended the model to dyadic designs. The DRSA model allows a direct test of similarity effect hypotheses and avoids the pitfalls of previous approaches. A particular strength of the approach is the fact that new classes of hypotheses beyond basic similarity effect hypotheses can be tested which would be hard or impossible to test with conventional methods. For example, previous approaches using difference scores implicitly assume (and cannot test) that similarity effects are identical on all levels of similarity. For many domains of research questions, however, it is reasonable to assume that a high/high combination of the predictors is more beneficial than a low/low combination. Rising ridge models outlined here and covered in detail elsewhere \parencite{schonbrodt_testing_2015} are in particular suitable to model and test these interesting hypotheses. DRSA is also able to model binary outcome variables in a generalized linear model. In this case, a probit link function is used to model the probability for a positive outcome (see the code in the online material for an example on modeling and plotting binary outcomes).
+
+The DRSA approach has many advantages compared to previous approaches, but users should be aware of some limitations. First, a large number of model parameters is estimated. From a hypothesis testing point of view, this also involves a multitude of significance tests. Depending on the type of hypothesis tested, corrections such as the Bonferroni correction \parencite{bonferroni_il_1935} or more powerful alternatives, such as the Benjamini-Hochberg correction \parencite{benjamini_controlling_1995}, might be necessary to ensure the nominal error rate. This also emphasizes the necessity of ensuring an adequate power when planning a study.
+Second, the manifest path models assume that variables have been measured without error. Latent models of all variables are possible; however, there are currently several ways and no general consensus on how to model and estimate latent interactions \parencite[e.g.,][]{harring_comparison_2012}.
+Finally, the approach that was introduced here can be used to investigate how the similarity on a single dimension relates to an outcome; it does not cover similarity across multiple predictor dimensions.\footnote{See \textcite{edwards_study_1994} for a generalization of profile similarity indices to polynomial regression. This approach, however, requires to expand the linear model with a second-order polynomial for each predictor dimension. For example, reformulating a sum-of-squares profile discrepancy score of the Big-5 personality traits as an unconstrained model requires 5*5 = 25 terms instead of a single discrepancy score.}
+
+To conclude, we hope that the conceptual DRSA framework and the provided R scripts assist substantive researchers in precisely formulating, testing, and interpreting similarity effect hypotheses in their dyadic research.
+
+\printbibliography
+
+
+\section{Appendix A}
+
+To determine whether a response surface reflects a similarity effect, one needs to test the four conditions on $a_1$ to $a_4$ (i.e., $a_1 = a_2 = a_3 = 0$ and $a_4 < 0$), and in addition, one needs to find out whether the ridge line ("first principal axis", in mathematical terms) of the surface is positioned at the LOC. The position of the ridge line can in general be determined by considering its projection onto the X-Y plane (e.g., the dotted line on the bottom of the coordinate cube in Figure~\ref{fig:multipleRSA}B). When one understands the X-Y plane as a coordinate system in itself, one can express the position of the ridge as a linear equation that relates Y to X. Its formula is \parencite[see][]{Edwards2007}
+
+\begin{equation}
+Y = p_{10} + p_{11}X,
+\end{equation}
+
+where its coefficients $p_{10}$ and $p_{11}$ can be computed from the regression estimates $b_1$ to $b_5$ via the formulas
+
+\begin{align}
+p_{11} &= 
+\frac{(b_5 - b_3) + \sqrt{(b_3-b_5)^2 + b_{4}^{2}}}{b_4} \nonumber \\[0.3cm]
+p_{10} &= \left(\frac{b_1b_4 - 2b_2b_3}{4b_3b_5 - b_{4}^{2}}\right) - p_{11} \left( \frac{b_2b_4 - 2b_1b_5}{4b_3b_5 - b_{4}^{2}} \right) \nonumber.
+\end{align}
+
+Because the LOC is described by the formula $Y = X = 0 + 1*X$, one can determine whether the ridge line equals the LOC by testing whether $p_{10}$ equals zero and $p_{11}$ equals one. However, in case that the conditions on $a_1$ to $a_4$ for a similarity effect are already satisfied (i.e., when $a_1 = a_2 = a_3 = 0$ and $a_4 < 0$), there is a much easier way to test whether the ridge equals the LOC: In this case, it suffices to test whether $a_5 = b_3 - b_5 = 0$, because this implies $p_{10} = 0$ and $p_{11} = 1$ in such a situation. We will now provide the mathematical proof that this is indeed the case. 
+
+Consider a situation in which the above introduced conditions on $a_1$ to $a_4$ hold, and in which the additional condition $a_5 = b_3 - b_5 = 0$ holds. In particular, $a_3 = b_1 - b_2 = 0$ implies that $b_1 = b_2$, and $a_5 = b_3 - b_5 = 0$ implies $b_3 = b_5$. We can use these observations to compute the coefficients of the ridge line: 
+
+\begin{align}
+p_{11} &= \frac{(b_5 - b_3) + \sqrt{(b_3-b_5)^2 + b_{4}^{2}}}{b_4} \nonumber \\[0.3cm]
+       &= \frac{0 + \sqrt{0^2 + b_{4}^{2}}}{b_4}  = 1 \nonumber,
+\end{align}
+
+and 
+
+\begin{align}
+p_{10} &= \left(\frac{b_1b_4 - 2b_2b_3}{4b_3b_5 - b_{4}^{2}}\right) - 1* \left( \frac{b_2b_4 - 2b_1b_5}{4b_3b_5 - b_{4}^{2}} \right) \nonumber \\[0.3cm]
+       &= \frac{b_1b_4 - 2b_1b_3}{4b_3b_3 - b_{4}^{2}} - \frac{b_1b_4 - 2b_1b_3}{4b_3b_3 - b_{4}^{2}}  = 0 \nonumber.
+\end{align}
+
+
+That is, the position of the ridge line is $Y = p_{10} + p_{11}X = 0 + 1X = X$, which equals the position of the LOC. 
+
+\end{document}
