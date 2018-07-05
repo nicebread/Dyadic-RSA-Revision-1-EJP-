@@ -19,6 +19,35 @@
 
 \refsection{0}
   \sortlist[entry]{apa/global/}
+    \entry{Ackerman_Kenny_2016}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=8585572dcf8f776f82048896368e8cb6}{%
+           family={Ackerman},
+           familyi={A\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=80abcba7c9b34db12b602d3ea83186e1}{%
+           family={Kenny},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{10af5156b16ed57e5f86a199b0d315d0}
+      \strng{fullhash}{10af5156b16ed57e5f86a199b0d315d0}
+      \strng{authornamehash}{10af5156b16ed57e5f86a199b0d315d0}
+      \strng{authorfullhash}{10af5156b16ed57e5f86a199b0d315d0}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{APIMPowerR: {A}n interactive tool for Actor-Partner Interdependence Model power analysis}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://robert-a-ackerman.shinyapps.io/APIMPowerRdis/
+      \endverb
+    \endentry
     \entry{Aiken_West_1991}{book}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=a386a572bb548ede0bc78327b5c9f642}{%
@@ -48,6 +77,42 @@
       \field{isbn}{0-8039-3605-2}
       \field{title}{Multiple regression: {T}esting and interpreting interactions}
       \field{year}{1991}
+    \endentry
+    \entry{Back_Vazire_2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=c60cc850bd495f877093a8fb9c0e55a5}{%
+           family={Back},
+           familyi={B\bibinitperiod},
+           given={Mitja\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{uniquename=0,hash=4510ac4cca77c1f403675c713706be37}{%
+           family={Vazire},
+           familyi={V\bibinitperiod},
+           given={Simine},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{047ec8db1a075b8a95fe35fa9f0670eb}
+      \strng{fullhash}{047ec8db1a075b8a95fe35fa9f0670eb}
+      \strng{authornamehash}{047ec8db1a075b8a95fe35fa9f0670eb}
+      \strng{authorfullhash}{047ec8db1a075b8a95fe35fa9f0670eb}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1099-0984}
+      \field{journaltitle}{European Journal of Personality}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{The Social Consequences of Personality: {S}ix Suggestions for Future Research}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{pages}{296\bibrangedash 307}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/per.1998
+      \endverb
     \endentry
     \entry{Barranti__2017}{article}{}
       \name{author}{3}{}{%

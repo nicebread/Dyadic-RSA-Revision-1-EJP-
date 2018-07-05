@@ -1,22 +1,23 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[44] biber-darwin:303> INFO - === Wed Jul  4, 2018, 07:57:30
-[70] Biber.pm:359> INFO - Reading 'main.bcf'
-[177] Biber.pm:835> INFO - Found 54 citekeys in bib section 0
-[191] Biber.pm:3670> INFO - Processing section 0
-[208] Biber.pm:3840> INFO - Looking for bibtex format file 'combined.bib' for section 0
-[215] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[232] bibtex.pm:1292> INFO - Found BibTeX data source 'combined.bib'
-[306] Utils.pm:164> WARN - year field 'in press' in entry 'HumbergRSA' is not an integer - this will probably not sort properly.
-[330] Utils.pm:164> WARN - month field 'Mar' in entry 'Bleidorn_2016' is not an integer - this will probably not sort properly.
-[333] Utils.pm:164> WARN - month field 'May' in entry 'Barranti__2017' is not an integer - this will probably not sort properly.
-[386] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/OrMz2flSmX/combined.bib_38686.utf8, line 575, warning: 1 characters of junk seen at toplevel
-[386] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/OrMz2flSmX/combined.bib_38686.utf8, line 592, warning: 1 characters of junk seen at toplevel
-[386] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/OrMz2flSmX/combined.bib_38686.utf8, line 608, warning: 1 characters of junk seen at toplevel
-[547] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[547] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[547] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'en-US'
-[547] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[609] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[627] bbl.pm:712> INFO - Output to main.bbl
-[627] Biber.pm:109> INFO - WARNINGS: 6
+[51] biber-darwin:303> INFO - === Thu Jul  5, 2018, 08:15:49
+[79] Biber.pm:359> INFO - Reading 'main.bcf'
+[195] Biber.pm:835> INFO - Found 56 citekeys in bib section 0
+[211] Biber.pm:3670> INFO - Processing section 0
+[232] Biber.pm:3840> INFO - Looking for bibtex format file 'combined.bib' for section 0
+[240] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[257] bibtex.pm:1292> INFO - Found BibTeX data source 'combined.bib'
+[334] Utils.pm:164> WARN - year field 'in press' in entry 'HumbergRSA' is not an integer - this will probably not sort properly.
+[364] Utils.pm:164> WARN - month field 'Mar' in entry 'Bleidorn_2016' is not an integer - this will probably not sort properly.
+[368] Utils.pm:164> WARN - month field 'May' in entry 'Barranti__2017' is not an integer - this will probably not sort properly.
+[425] Utils.pm:164> WARN - month field 'Mar' in entry 'Back_Vazire_2015' is not an integer - this will probably not sort properly.
+[435] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/cutXhkalq6/combined.bib_60477.utf8, line 575, warning: 1 characters of junk seen at toplevel
+[435] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/cutXhkalq6/combined.bib_60477.utf8, line 592, warning: 1 characters of junk seen at toplevel
+[436] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/9s/fs1j06x95fd9vpjjg_3yfjdm0000gp/T/cutXhkalq6/combined.bib_60477.utf8, line 608, warning: 1 characters of junk seen at toplevel
+[646] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[646] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[646] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'en-US'
+[646] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[714] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[725] bbl.pm:712> INFO - Output to main.bbl
+[725] Biber.pm:109> INFO - WARNINGS: 7

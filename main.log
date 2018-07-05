@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.8)  4 JUL 2018 07:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.8)  5 JUL 2018 08:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2150,45 +2150,64 @@ Underfull \vbox (badness 5563) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-<plots/Fig1_edited.pdf, id=170, 370.38374pt x 370.38374pt>
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+
+Package xcolor Warning: Incompatible color definition on input line 202.
+
+<plots/Fig1_edited.pdf, id=169, 370.38374pt x 370.38374pt>
 File: plots/Fig1_edited.pdf Graphic file (type pdf)
 
 <use plots/Fig1_edited.pdf>
-Package pdftex.def Info: plots/Fig1_edited.pdf used on input line 206.
+Package pdftex.def Info: plots/Fig1_edited.pdf used on input line 207.
 (pdftex.def)             Requested size: 241.74324pt x 241.7469pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 207.
+Package xcolor Warning: Incompatible color definition on input line 208.
 
 [3 <./plots/Fig1_edited.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package xcolor Warning: Incompatible color definition on input line 219.
 
 
-<plots/RSA-multiples.pdf, id=243, 568.1225pt x 454.69875pt>
+Package xcolor Warning: Incompatible color definition on input line 221.
+
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
+
+<plots/RSA-multiples.pdf, id=246, 568.1225pt x 454.69875pt>
 File: plots/RSA-multiples.pdf Graphic file (type pdf)
 
 <use plots/RSA-multiples.pdf>
-Package pdftex.def Info: plots/RSA-multiples.pdf used on input line 224.
+Package pdftex.def Info: plots/RSA-multiples.pdf used on input line 229.
 (pdftex.def)             Requested size: 501.55397pt x 401.43356pt.
+
+Underfull \vbox (badness 3189) has occurred while \output is active []
+
  [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6220) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5331) has occurred while \output is active []
 
- [5 <./plots/RSA-multiples.pdf>] [6]
-<plots/Dyadic_RSA.pdf, id=316, 685.56125pt x 642.4pt>
+ [5 <./plots/RSA-multiples.pdf>]
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+ [6]
+<plots/Dyadic_RSA.pdf, id=319, 685.56125pt x 642.4pt>
 File: plots/Dyadic_RSA.pdf Graphic file (type pdf)
 
 <use plots/Dyadic_RSA.pdf>
-Package pdftex.def Info: plots/Dyadic_RSA.pdf used on input line 286.
+Package pdftex.def Info: plots/Dyadic_RSA.pdf used on input line 291.
 (pdftex.def)             Requested size: 501.55397pt x 469.98714pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 318.
+Package xcolor Warning: Incompatible color definition on input line 323.
 
 
-Package xcolor Warning: Incompatible color definition on input line 328.
+Package xcolor Warning: Incompatible color definition on input line 333.
 
 [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2197,50 +2216,63 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./plots/Dyadic_RSA.pdf>]
-Underfull \vbox (badness 2884) has occurred while \output is active []
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+
+
+Package xcolor Warning: Incompatible color definition on input line 350.
+
+
+Underfull \vbox (badness 3189) has occurred while \output is active []
 
  [9]
+
+Package xcolor Warning: Incompatible color definition on input line 354.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
 LaTeX Font Info:    Try loading font information for T1+txtt on input line 398.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-) [10]
-<plots/fig_dRSA.pdf, id=574, 578.16pt x 289.08pt>
+) [11]
+<plots/fig_dRSA.pdf, id=600, 578.16pt x 289.08pt>
 File: plots/fig_dRSA.pdf Graphic file (type pdf)
  <use plots/fig_dRSA.pdf>
 Package pdftex.def Info: plots/fig_dRSA.pdf used on input line 480.
 (pdftex.def)             Requested size: 501.55397pt x 250.77415pt.
 
-[11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package xcolor Warning: Incompatible color definition on input line 503.
+
+[12]
+
+Package xcolor Warning: Incompatible color definition on input line 510.
 
 
-Underfull \vbox (badness 5939) has occurred while \output is active []
+Underfull \vbox (badness 1052) has occurred while \output is active []
 
- [12 <./plots/fig_dRSA.pdf>] [13] [14] [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 554.
+ [13 <./plots/fig_dRSA.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 512.
+
+[14] [15] [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
 - LAST -
-Extra skip:15.92322pt
-Left:295.10422pt/1.49998pt
-Right:278.51599pt/2.165pt
-Output:287.8101pt
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 554.
+Extra skip:22.45055pt
+Left:138.50577pt/0.12pt
+Right:114.01022pt/2.165pt
+Output:129.258pt
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 554.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 554.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: C1D8F9B1FBC989FF3944F1B1CB5C98E6;1804
-(rerunfilecheck)             After:  680A768368F9424C050B36C6EC2E3C26;1804.
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 398F01D04CF87A8868D18387AE06A6AD;1804.
 
 
 Package biblatex Warning: Please rerun LaTeX.
@@ -2251,13 +2283,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39203 strings out of 493013
- 745657 string characters out of 6133344
- 1210875 words of memory out of 5000000
- 41999 multiletter control sequences out of 15000+600000
+ 39419 strings out of 493013
+ 749259 string characters out of 6133344
+ 1212917 words of memory out of 5000000
+ 42211 multiletter control sequences out of 15000+600000
  72318 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,58p,10355b,2760s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,61p,10355b,2764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/2016/te
@@ -2270,10 +2302,10 @@ ts/txsyc.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 509239 bytes).
+Output written on main.pdf (17 pages, 518704 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
+ 790 PDF objects out of 1000 (max. 8388607)
+ 691 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
