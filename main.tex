@@ -1,7 +1,7 @@
 %\documentclass[jou,a4paper]{apa6}
-%\documentclass[jou,a4paper,draftfirst]{apa6}
+\documentclass[jou,a4paper,draftfirst]{apa6}
 %\documentclass[man,a4paper]{apa6}
-\documentclass[man,a4paper,mask]{apa6}
+%\documentclass[man,a4paper,mask]{apa6}
 %\documentclass[doc,a4paper]{apa6}
 
 \usepackage[]{graphicx}
@@ -13,14 +13,14 @@
 \definecolor{colour_removed}{rgb}{.8,.1,.1}
 \definecolor{colour_moved}{rgb}{.1,.1,.8}
 %For rendering the changes:
-\newcommand{\added}[1]{\textcolor{colour_added}{\bf{#1}}}
-\newcommand{\removed}[1]{\textcolor{colour_removed}{#1}}
-\newcommand{\moved}[1]{\textcolor{colour_moved}{#1}}
+%\newcommand{\added}[1]{\textcolor{colour_added}{\bf{#1}}}
+%\newcommand{\removed}[1]{\textcolor{colour_removed}{#1}}
+%\newcommand{\moved}[1]{\textcolor{colour_moved}{#1}}
 
 %For rendering the clean version:
-% \newcommand{\added}[1]{#1}
-% \newcommand{\removed}[1]{}
-% \newcommand{\moved}[1]{#1}
+\newcommand{\added}[1]{#1}
+\newcommand{\removed}[1]{}
+\newcommand{\moved}[1]{#1}
 
 %------------------------------------------------
 
@@ -149,7 +149,7 @@ Correspondence concerning this article should be addressed to Felix Schönbrodt,
 
 % Abstract: 250 words max, up to 5 keywords
 \abstract{Dyadic similarity effect hypotheses state that the (dis)similarity between dyad members (e.g., the similarity on a personality dimension) is related to a dyadic outcome variable (e.g., the relationship satisfaction of both partners). Typically, these hypotheses have been investigated by using difference scores or other profile similarity indices as predictors of the outcome variables. These approaches, however, have been vigorously criticized for their conceptual and statistical shortcomings. Here, we introduce a statistical method that is based on polynomial regression and addresses most of these shortcomings: Dyadic response surface analysis (DRSA). This model is tailored for similarity effect hypotheses and fully accounts for the dyadic nature of relationship data. Furthermore, we provide a tutorial with an illustrative example and reproducible R and Mplus scripts that should assist substantive researchers in precisely formulating, testing, and interpreting their dyadic similarity effect hypotheses.
-%\todo[inline,color=blue!20!white]{Unpublished manuscript, draft version 0.1, 2017-06-02.}
+\todo[inline,color=blue!20!white]{Unpublished manuscript, draft version 0.2, 2018-07-10.}
 }
 
 \keywords{congruence, similarity, dyadic data, response surface analysis, polynomial regression}
